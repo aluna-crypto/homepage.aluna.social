@@ -3,7 +3,7 @@ module.exports = {
     return [
       {
         source: '/:slug([^.]{2,}$)',
-        destination: 'https://aluna.social/:slug',
+        destination: 'https://app.aluna.social/:slug',
         permanent: true,
       },
     ]
