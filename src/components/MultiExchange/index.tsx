@@ -2,7 +2,7 @@ import { Box, Text, Icon, HStack } from "@chakra-ui/react";
 import React from "react";
 import {} from "@chakra-ui/react";
 import Bitmex from "../atoms/icons/Bitmex";
-import { ConnectedExchange } from "../atoms/icons/Bitmex/chain/Index";
+import ConnectedExchange from "../atoms/icons/chain/Index";
 
 function MultiExchange() {
   return (
