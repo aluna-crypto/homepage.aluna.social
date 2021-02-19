@@ -11,30 +11,45 @@ const breakpoints = createBreakpoints({
 });
 
 const theme = extendTheme({
+  styles: {
+    global: {
+      "html, body": {
+        // fontSize: "sm",
+        bgColor: "nero",
+        color: "gray.600",
+        lineHeight: "tall",
+      },
+      a: {
+        color: "teal.500",
+      },
+    },
+  },
   colors: {
+    nero: "#141414",
+    darkGray: "#b1b1b1",
     dark: {
-      50: "#f8f0f2",
-      100: "#d9d9d9",
-      200: "#bfbfbf",
-      300: "#a6a6a6",
-      400: "#8c8c8c",
-      500: "#737373",
-      600: "#595959",
-      700: "#404040",
-      800: "#262626",
-      900: "#120b0d",
+      50: "#0000ff",
+      100: "#0000ff",
+      200: "#242424", // normal
+      300: "#ccff00", // hover
+      400: "#00ff00", // pressed
+      500: "#0000ff",
+      600: "#0000ff",
+      700: "#0000ff",
+      800: "#0000ff",
+      900: "#0000ff",
     },
     brand: {
-      50: "#f0e8ff",
-      100: "#d0bef7",
-      200: "#af94ed",
-      300: "#8f69e3",
-      400: "#6e3eda",
-      500: "#5525c1",
-      600: "#421d97",
-      700: "#2f136d",
-      800: "#1b0b43",
-      900: "#0b021c",
+      50: "#0000ff",
+      100: "#0000ff",
+      200: "#7547dc", // normal
+      300: "#ccff00", // hover
+      400: "#00ff00", // pressed
+      500: "#0000ff",
+      600: "#0000ff",
+      700: "#0000ff",
+      800: "#0000ff",
+      900: "#0000ff",
     },
   },
   fonts,
