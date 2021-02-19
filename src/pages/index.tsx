@@ -1,7 +1,6 @@
 import {
   //Link as ChakraLink,
   Text,
-  Grid,
   VStack,
   Button,
   Flex,
