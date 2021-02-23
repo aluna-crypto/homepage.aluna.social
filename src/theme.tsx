@@ -1,7 +1,9 @@
 import { extendTheme } from "@chakra-ui/react";
 import { createBreakpoints } from "@chakra-ui/theme-tools";
 
-const fonts = { Roboto: `'Roboto', monospace` };
+const fonts = {
+  Roboto: `'Roboto'`,
+};
 
 const breakpoints = createBreakpoints({
   sm: "40em",
@@ -15,6 +17,7 @@ const theme = extendTheme({
     global: {
       "html, body": {
         // fontSize: "sm",
+        fontFamily: "Roboto",
         bgColor: "nero",
         color: "gray.600",
         lineHeight: "tall",
@@ -33,9 +36,9 @@ const theme = extendTheme({
       200: "#242424", // normal
       300: "#ccff00", // hover
       400: "#00ff00", // pressed
-      500: "#0000ff",
-      600: "#0000ff",
-      700: "#0000ff",
+      500: "#242424", // no javascript - normal
+      600: "#ff0000", // no javascript - hover
+      700: "#00ff00", // no javascript - press
       800: "#0000ff",
       900: "#0000ff",
     },

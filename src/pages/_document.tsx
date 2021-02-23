@@ -7,7 +7,7 @@ export default class Document extends NextDocument {
       <Html>
         <Head>
           <link
-            href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap"
+            href="https://fonts.googleapis.com/css?family=Roboto:400&display=swap"
             rel="stylesheet"
           />
         </Head>

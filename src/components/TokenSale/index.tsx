@@ -6,18 +6,22 @@ import {
   Img,
   SimpleGrid,
   Text,
+  useBreakpointValue,
 } from "@chakra-ui/react";
 import React from "react";
 import P100x from "../atoms/icons/P100x/Index";
 import Partnerships from "../atoms/icons/Partnership/Index";
 import Pdxdao from "../atoms/icons/Pdxdao/Index";
 import Pgbv from "../atoms/icons/Pgbv/Index";
+import Link from "next/link";
 
 function TokenSale() {
+  const columns = useBreakpointValue({ base: 1, md: 2 });
+
   return (
     <SimpleGrid
       // backgroundImage="url('tokensale.png')"
-      columns={2}
+      columns={columns}
       minHeight="566px"
       width="100%"
       align="left"
@@ -82,7 +86,11 @@ function TokenSale() {
           Aluna Partners and Investors
         </Text>
         <HStack spacing="5" marginTop="4">
-          <P100x />
+          <Link href="https://www.100x.group/">
+            <a target="_blank">
+              <P100x />
+            </a>
+          </Link>
           <Pgbv />
           <Pdxdao />
         </HStack>

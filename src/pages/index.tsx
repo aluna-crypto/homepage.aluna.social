@@ -83,7 +83,7 @@ const Index = () => {
           <DrawerCloseButton />
           <DrawerHeader>Create your account</DrawerHeader>
           <DrawerBody>This should be the menu</DrawerBody>
-          <DrawerFooter>something</DrawerFooter>
+          <DrawerFooter>Contact Us</DrawerFooter>
         </DrawerContent>
       </Drawer>
 
