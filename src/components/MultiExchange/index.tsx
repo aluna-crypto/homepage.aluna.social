@@ -11,7 +11,7 @@ function MultiExchange() {
   return (
     <VStack
       marginTop="6.5rem !important"
-      backgroundImage="url('img/overview.jpg')"
+      backgroundImage="url('https://aluna-homepage.herokuapp.com/img/img/overview.jpg')"
       // backgroundImage="url('multi.png')"
       backgroundSize="cover"
       minHeight="566px"

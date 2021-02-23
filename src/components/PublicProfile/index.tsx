@@ -15,7 +15,7 @@ function PublicProfile() {
     <SimpleGrid
       columns={2}
       // backgroundImage="url('profile.png')"
-      backgroundImage="url('img/alunaut.png')"
+      backgroundImage="url('https://aluna-homepage.herokuapp.com/img/alunaut.png')"
       backgroundSize="cover"
       backgroundRepeat="no-repeat"
       minHeight="566px"
@@ -58,7 +58,10 @@ function PublicProfile() {
       </Box>
 
       <Box paddingLeft="10">
-        <Img src="img/profiles.png" maxW="360px" />
+        <Img
+          src="https://aluna-homepage.herokuapp.com/img/profiles.png"
+          maxW="360px"
+        />
       </Box>
     </SimpleGrid>
   );

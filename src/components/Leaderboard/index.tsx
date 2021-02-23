@@ -15,7 +15,7 @@ function LeaderBoard() {
     <SimpleGrid
       columns={2}
       // backgroundImage="url('leaderboard.png')"
-      backgroundImage="url('img/moon.jpg')"
+      backgroundImage="url('https://aluna-homepage.herokuapp.com/img/moon.jpg')"
       backgroundSize="cover"
       backgroundRepeat="no-repeat"
       minHeight="566px"
@@ -57,7 +57,11 @@ function LeaderBoard() {
         <Text textStyle="cardText" color="darkGray">
           Rankings this month:
         </Text>
-        <Img src="img/leaderboard.png" w="360px" paddingTop="2" />
+        <Img
+          src="https://aluna-homepage.herokuapp.com/img/img/leaderboard.png"
+          w="360px"
+          paddingTop="2"
+        />
       </Box>
     </SimpleGrid>
   );

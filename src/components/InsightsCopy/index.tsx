@@ -40,7 +40,11 @@ function InsightsCopy() {
         </HStack>
 
         <Box w="100%" paddingTop="70px" paddingLeft="70px">
-          <Img alignSelf="center" src="img/copy-counter-copy.png" w="222px" />
+          <Img
+            alignSelf="center"
+            src="https://aluna-homepage.herokuapp.com/img/copy-counter-copy.png"
+            w="222px"
+          />
         </Box>
 
         <Text textStyle="cardSubTitle" color="#f5be23" marginTop="10">

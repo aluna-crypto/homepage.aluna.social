@@ -31,14 +31,17 @@ function TokenSale() {
     >
       <Box
         backgroundColor="#000000"
-        backgroundImage="url('img/token-sale.jpg')"
+        backgroundImage="url('https://aluna-homepage.herokuapp.com/img/token-sale.jpg')"
         backgroundSize="contain"
         backgroundRepeat="no-repeat"
         padding="10"
         borderRadius="2xl"
       >
         <HStack>
-          <Img w="40px" src="img/aluna-bright.png" />
+          <Img
+            w="40px"
+            src="https://aluna-homepage.herokuapp.com/img/aluna-bright.png"
+          />
           <Text textStyle="cardTitle" color="white">
             Public Token Sale
           </Text>

@@ -96,12 +96,16 @@ function OpinionsReviews() {
           textAlign="left"
           alignItems="start"
         >
-          <Img src="img/opinions-review.jpg" />
+          <Img src="https://aluna-homepage.herokuapp.com/img/img/opinions-review.jpg" />
           <Text color="darkGray" padding="6" textStyle="cardText">
             Aluna.Social Review 2021: A Social Copy Trading Platform for Crypto
             Traders
           </Text>
-          <Img src="img/coin-cap.png" paddingLeft="6" w="111px" />
+          <Img
+            src="https://aluna-homepage.herokuapp.com/img/coin-cap.png"
+            paddingLeft="6"
+            w="111px"
+          />
           <Text color="darkGray" paddingLeft="6">
             blog.coindecap.com
           </Text>
