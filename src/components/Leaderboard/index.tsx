@@ -58,7 +58,7 @@ function LeaderBoard() {
           Rankings this month:
         </Text>
         <Img
-          src="https://aluna-homepage.herokuapp.com/img/img/leaderboard.png"
+          src="https://aluna-homepage.herokuapp.com/img/leaderboard.png"
           w="360px"
           paddingTop="2"
         />
