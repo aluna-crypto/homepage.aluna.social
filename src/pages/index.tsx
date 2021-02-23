@@ -14,15 +14,23 @@ import {
   DrawerFooter,
   useBreakpointValue,
   Icon,
+  HStack,
 } from "@chakra-ui/react";
 import React from "react";
 import Banner from "../components/Banner";
 import Link from "next/link";
 
 import { Container } from "../components/Container";
-import { Footer } from "../components/Footer";
+import Footer from "../components/Footer";
 import MultiExchange from "../components/MultiExchange";
 import { HamburgerIcon } from "@chakra-ui/icons";
+import PublicProfile from "../components/PublicProfile/index";
+import InsightsCopy from "../components/InsightsCopy";
+import LeaderBoard from "../components/Leaderboard";
+import TokenSale from "../components/TokenSale";
+import OpinionsReviews from "../components/OpinionsReviews";
+import GetStarted from "../components/GetStarted/index";
+import Aluna from "../components/atoms/icons/Aluna/Index";
 
 const Index = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -35,15 +43,26 @@ const Index = () => {
         width="100%"
         position="fixed"
         top="0"
-        height="12"
-        bgColor="nero"
+        // height="12"
+        padding="5"
         justifyContent="space-between"
         zIndex="sticky"
       >
         <Flex>
-          <Link href="https://aluna.social">Aluna</Link>
-          <Link href="https://aluna.social/insights">Trade on Aluna</Link>
-          <Link href="https://aluna.social/token">Aluna Token</Link>
+          <Link href="https://aluna.social">
+            <a>
+              <HStack>
+                <Aluna />
+                Aluna
+              </HStack>
+            </a>
+          </Link>
+          <Link href="https://aluna.social/insights">
+            <a>Trade on Aluna</a>
+          </Link>
+          <Link href="https://aluna.social/token">
+            <a>Aluna Token</a>
+          </Link>
         </Flex>
         <Flex>
           <Link href="https://aluna.social/signin">Sign In</Link>
@@ -70,23 +89,22 @@ const Index = () => {
       </Drawer>
 
       <Container
-        marginTop="12"
+        paddingTop="12"
         bgColor="transparent"
-        backgroundImage="url('hero.jpg')"
+        backgroundImage="url('img/hero.jpg')"
         backgroundRepeat="no-repeat"
-        backgroundPosition="0 -300px"
       >
         <VStack spacing={6} maxWidth="900px">
           <Banner />
           <MultiExchange />
+          <PublicProfile />
+          <InsightsCopy />
+          <LeaderBoard />
+          <TokenSale />
+          <OpinionsReviews />
+          <GetStarted />
         </VStack>
-
-        <h1>aluna static homepage</h1>
-        <Button>Login</Button>
-
-        <Footer>
-          <Text>Next ❤️ Chakra</Text>
-        </Footer>
+        <Footer />
       </Container>
     </>
   );

@@ -1,43 +1,51 @@
-import { Box, Text, Icon, HStack } from "@chakra-ui/react";
+import { HStack, Icon, Spacer, Text, VStack } from "@chakra-ui/react";
 import React from "react";
-import {} from "@chakra-ui/react";
+import Binance from "../atoms/icons/Binance/index";
+import Bitfinex from "../atoms/icons/Bitfinex";
 import Bitmex from "../atoms/icons/Bitmex";
+import Bittrex from "../atoms/icons/Bittrex";
 import ConnectedExchange from "../atoms/icons/chain/Index";
+import Poloniex from "../atoms/icons/Poloniex";
 
 function MultiExchange() {
   return (
-    <Box
-      backgroundImage="url('multiexchange-terminal.jpg')"
+    <VStack
+      backgroundImage="url('img/overview.jpg')"
+      // backgroundImage="url('multi.png')"
+      backgroundSize="cover"
       minHeight="566px"
       width="100%"
       align="left"
       padding="10"
+      display="flex"
+      placeItems="flex-start"
     >
       <HStack>
         <Icon as={ConnectedExchange} />
-        <Text fontSize="4xl" color="white" alignItems="">
+        <Text fontSize="1xl" color="white">
           Multi Exchange Terminal
         </Text>
       </HStack>
-      <Text fontSize="2xl" color="#f5be23" marginTop="20">
+
+      <Text fontSize="4xl" color="#f5be23">
         Manage all your exchange <br />
         accounts
         <span style={{ color: "white" }}> from a single interface.</span>
       </Text>
-      <HStack>
+      <Spacer />
+      <HStack spacing="1">
         <Bitmex />
-        <Bitmex />
-        <Bitmex />
-        <Bitmex />
-        <Bitmex />
+        <Binance />
+        <Bitfinex />
+        <Bittrex />
+        <Poloniex />
       </HStack>
       <Text color="darkGray">
         View your portfolio distribution, execute
         <br />
         trades and monitor orders with ease.
       </Text>
-    </Box>
+    </VStack>
   );
 }
-
 export default MultiExchange;

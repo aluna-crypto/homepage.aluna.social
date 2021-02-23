@@ -1,15 +1,9 @@
 import { Icon } from "@chakra-ui/react";
 import React from "react";
-import styles from "./button.module.css";
 
 function Bitmex() {
   return (
-    <Icon
-      w="36px"
-      h="36px"
-      viewBox="0 0 120 120"
-      className={styles.iconExchange}
-    >
+    <Icon w="36px" h="36px" viewBox="0 0 120 120">
       <path
         fill="#FF0102"
         d="M18.631 0L0 73.331 18.86 73.331 30.519 27.443 49.036 27.443 56.009 0z"

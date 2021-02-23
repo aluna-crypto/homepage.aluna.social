@@ -1,13 +1,12 @@
-import { Box, Text, Button, VStack, Center } from "@chakra-ui/react";
+import { Box, Button, Center, Text, VStack } from "@chakra-ui/react";
 import React from "react";
-import {} from "@chakra-ui/react";
 
 interface BannerInterface {}
 function Banner({}: BannerInterface) {
   return (
     <Box w="100%" marginTop="48">
       <VStack spacing={6} align="stretch" color="white" textAlign="center">
-        <Text fontSize="6xl">
+        <Text fontSize="6xl" fontFamily="Roboto">
           The social trading
           <br /> terminal we deserve.
         </Text>

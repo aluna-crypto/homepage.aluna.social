@@ -1,0 +1,8 @@
+.iconPartners {
+  transition: all 0.5s ease;
+  filter:grayscale(100%);
+}
+
+.iconPartners:hover {
+  filter:none;
+}
