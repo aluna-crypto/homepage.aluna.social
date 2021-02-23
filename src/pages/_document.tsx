@@ -50,19 +50,19 @@ export default class Document extends NextDocument {
           <link rel="canonical" href="https://aluna.social" />
           <link
             rel="preload"
-            href="https://aluna.social/fonts/Roboto-Light.ttf"
+            href="/fonts/Roboto-Light.ttf"
             as="font"
             crossOrigin=""
           />
           <link
             rel="preload"
-            href="https://aluna.social/fonts/Roboto-Regular.ttf"
+            href="/fonts/Roboto-Regular.ttf"
             as="font"
             crossOrigin=""
           />
           <link
             rel="preload"
-            href="https://aluna.social/fonts/Roboto-Medium.ttf"
+            href="/fonts/Roboto-Medium.ttf"
             as="font"
             crossOrigin=""
           />
