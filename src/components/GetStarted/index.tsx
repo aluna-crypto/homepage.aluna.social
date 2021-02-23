@@ -11,10 +11,15 @@ function GetStarted() {
       padding="10"
     >
       <VStack padding="40">
-        <Text fontSize="5rem" color="white" alignItems="">
+        <Text fontSize="5rem" color="white" fontFamily="Roboto300">
           Get started.
         </Text>
-        <Text fontSize="1.5rem" color="#f5be23" marginTop="20">
+        <Text
+          fontSize="1.5rem"
+          color="#f5be23"
+          fontFamily="Roboto"
+          marginTop="20"
+        >
           Create a free account
           <span style={{ color: "white" }}>
             {" "}
@@ -24,12 +29,13 @@ function GetStarted() {
           </span>
         </Text>
         <Button
+          marginTop="1.5rem !important"
           colorScheme="brand"
           color="white"
           marginRight="2"
           height="3rem"
           width="20rem"
-          fontSize="xl"
+          textStyle="callToAction"
         >
           Create an account
         </Button>

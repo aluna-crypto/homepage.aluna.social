@@ -36,39 +36,48 @@ function Footer() {
               Aluna.Social
             </Text>
           </HStack>
-          <Text fontSize="3.5" color="darkGray" marginTop="3.5">
-            Try the platform
-          </Text>
+          <Link href="https://aluna.social">
+            <a target="_blank">
+              <Text
+                textStyle="cardText"
+                decoration="underline"
+                color="darkGray"
+                marginTop="3.5"
+              >
+                Try the platform
+              </Text>
+            </a>
+          </Link>
         </VStack>
 
         <SimpleGrid columns={2} templateColumns="1fr 3fr " marginTop="10">
           <VStack w="240px" align="left">
-            <Text fontSize="3.5" color="darkGray">
+            <Text textStyle="testimonials" color="darkGray">
               JOIN & FOLLOW
             </Text>
             <HStack>
               <Link href="https://twitter.com/AlunaSocial">
-                <a target="_blank" rel="noreferrer">
+                <a target="_blank" rel="nofollow noopener noreferrer">
                   <Twitter />
                 </a>
               </Link>
               <Link href="https://medium.com/@aluna">
-                <a target="_blank" rel="noreferrer">
+                <a target="_blank" rel="nofollow noopener noreferrer">
                   <Medium />
                 </a>
               </Link>
               <Link href="https://t.me/alunasocial">
-                <a target="_blank" rel="noreferrer">
+                <a target="_blank" rel="nofollow noopener noreferrer">
                   <Telegram />
                 </a>
               </Link>
               <Link href="https://discord.gg/hsadykv">
-                <a target="_blank" rel="noreferrer">
+                <a target="_blank" rel="nofollow noopener noreferrer">
                   <Discord />
                 </a>
               </Link>
               <Link href="https://www.youtube.com/channel/UCYBt4Skw5m2z7CM4LdAMREw">
-                <a target="_blank" rel="noreferrer">
+                <a target="_blank" rel="nofollow noopener noreferrer">
                   <Youtube />
                 </a>
               </Link>
@@ -78,7 +87,7 @@ function Footer() {
             </Text>
           </VStack>
           <VStack maxW="320px" alignItems="self-start">
-            <Text fontSize="3.5" color="darkGray">
+            <Text textStyle="cardText" color="darkGray">
               GET UPDATES
             </Text>
             <InputGroup

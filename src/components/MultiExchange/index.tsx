@@ -10,6 +10,7 @@ import Poloniex from "../atoms/icons/Poloniex";
 function MultiExchange() {
   return (
     <VStack
+      marginTop="6.5rem !important"
       backgroundImage="url('img/overview.jpg')"
       // backgroundImage="url('multi.png')"
       backgroundSize="cover"
@@ -22,12 +23,16 @@ function MultiExchange() {
     >
       <HStack>
         <Icon as={ConnectedExchange} />
-        <Text fontSize="1xl" color="white">
+        <Text textStyle="cardTitle" color="white">
           Multi Exchange Terminal
         </Text>
       </HStack>
 
-      <Text fontSize="4xl" color="#f5be23">
+      <Text
+        textStyle="cardSubTitle"
+        color="#f5be23"
+        marginTop="1.625rem !important"
+      >
         Manage all your exchange <br />
         accounts
         <span style={{ color: "white" }}> from a single interface.</span>
@@ -40,7 +45,7 @@ function MultiExchange() {
         <Bittrex />
         <Poloniex />
       </HStack>
-      <Text color="darkGray">
+      <Text color="darkGray" textStyle="cardText">
         View your portfolio distribution, execute
         <br />
         trades and monitor orders with ease.

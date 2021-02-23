@@ -21,11 +21,11 @@ function InsightsCopy() {
       >
         <HStack>
           <Icon as={Insights} />
-          <Text fontSize="1xl" color="white">
+          <Text textStyle="cardTitle" color="white">
             Insights Feed
           </Text>
         </HStack>
-        <Text fontSize="4xl" color="#f5be23" marginTop="6">
+        <Text textStyle="cardSubTitle" color="#f5be23" marginTop="6">
           Get insights{" "}
           <span style={{ color: "white" }}>& live updates on your feed.</span>
         </Text>
@@ -34,7 +34,7 @@ function InsightsCopy() {
       <Box padding="10" backgroundColor="#1f183b" borderRadius="2xl">
         <HStack>
           <Icon as={CopyTrading} />
-          <Text fontSize="1xl" color="white">
+          <Text textStyle="cardTitle" color="white">
             Copy Trading
           </Text>
         </HStack>
@@ -43,16 +43,16 @@ function InsightsCopy() {
           <Img alignSelf="center" src="img/copy-counter-copy.png" w="222px" />
         </Box>
 
-        <Text fontSize="4xl" color="#f5be23" marginTop="10">
+        <Text textStyle="cardSubTitle" color="#f5be23" marginTop="10">
           New to trading?
         </Text>
-        <Text fontSize="x-large" color="#f5be23">
+        <Text textStyle="cardTextHighlighted" color="#f5be23" marginTop="4">
           Copy the best traders{" "}
           <span style={{ color: "white" }}>
             from around the world or counter-copy the worst.
           </span>
         </Text>
-        <Text color="darkGray" fontSize="3" paddingTop="2">
+        <Text color="darkGray" textStyle="cardText" marginTop="6">
           Find the biggest risk takers, risk-averse and the most profitable
           traders to automatically copy or counter-copy.
         </Text>

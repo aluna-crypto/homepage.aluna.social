@@ -27,11 +27,11 @@ function PublicProfile() {
       <Box>
         <HStack>
           <Icon as={Profile} />
-          <Text fontSize="1xl" color="white">
+          <Text textStyle="cardTitle" color="white">
             Public Profiles
           </Text>
         </HStack>
-        <Text fontSize="4xl" color="#f5be23" marginTop="200px">
+        <Text textStyle="cardSubTitle" color="#f5be23" marginTop="200px">
           Build{" "}
           <span style={{ color: "white" }}>
             the ultimate
@@ -39,7 +39,7 @@ function PublicProfile() {
             trader profile.
           </span>
         </Text>
-        <Text color="darkGray" fontSize="14px">
+        <Text color="darkGray" textStyle="cardText" paddingTop="7">
           Your Aluna Social profile is a Trust Pass! Share your profile with
           your friends to prove your trading reputation, while keeping sensitive
           information like position and portfolio size private.
@@ -51,7 +51,7 @@ function PublicProfile() {
           marginRight="2"
           height="3rem"
           width="20rem"
-          fontSize="xl"
+          textStyle="callToAction"
         >
           Create your own Aluna profile
         </Button>

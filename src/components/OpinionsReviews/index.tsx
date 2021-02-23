@@ -14,12 +14,12 @@ function OpinionsReviews() {
       align="left"
       padding="10"
     >
-      <Text fontSize="4xl" color="white">
+      <Text textStyle="cardTitle" color="white">
         Opinions & Reviews
       </Text>
       <SimpleGrid columns={3} spacingX="9" marginTop="70px">
         <VStack spacing="5" alignItems="flex-start">
-          <Text color="darkGray" lineHeight="20px">
+          <Text color="darkGray" textStyle="testimonials">
             “I really like the ability to view trades across various exchanges
             in one place from various traders. This allows me to have a more
             multiplayer experience in crypto unlike the normal trading
@@ -28,7 +28,7 @@ function OpinionsReviews() {
             educational at the same time.”
           </Text>
           <Link href="https://www.linkedin.com/in/spencer89/" passHref>
-            <a target="_blank" rel="noreferrer">
+            <a target="_blank" rel="nofollow noopener noreferrer">
               <SimpleGrid
                 columns={2}
                 spacing="3"
@@ -39,7 +39,7 @@ function OpinionsReviews() {
                   <Img src="https://aluna.social/img/spencer.jpeg" w="10" />
                 </Box>
                 <VStack align="stretch">
-                  <Text color="white" fontSize="1rem">
+                  <Text color="white" textStyle="cardText">
                     Spencer Yang
                   </Text>
                   <Text
@@ -56,7 +56,7 @@ function OpinionsReviews() {
         </VStack>
 
         <VStack spacing="5" alignItems="flex-start">
-          <Text color="darkGray" lineHeight="20px">
+          <Text color="darkGray" textStyle="testimonials">
             “Aluna.Social is my go to trading terminal, it allows you access to
             multiple exchanges from a single interface, which has made my
             trading so much more seamless. Trading can be a lonely journey, but
@@ -64,7 +64,7 @@ function OpinionsReviews() {
             performing traders on the leaderboard.”
           </Text>
           <Link href="https://aluna.social/magnus" passHref>
-            <a target="_blank" rel="noreferrer">
+            <a target="_blank" rel="nofollow noopener noreferrer">
               <SimpleGrid
                 columns={2}
                 spacing="3"
@@ -75,7 +75,7 @@ function OpinionsReviews() {
                   <Img src="https://res.cloudinary.com/hha9zkbyo/image/upload/c_fill,fl_progressive,h_140,w_140/mrbb3cxgkjru4xr7fyt0" />
                 </Box>
                 <VStack align="stretch">
-                  <Text color="white" fontSize="1rem">
+                  <Text color="white" textStyle="cardText">
                     @Magnus
                   </Text>
                   <Text
@@ -97,7 +97,7 @@ function OpinionsReviews() {
           alignItems="start"
         >
           <Img src="img/opinions-review.jpg" />
-          <Text color="darkGray" padding="6">
+          <Text color="darkGray" padding="6" textStyle="cardText">
             Aluna.Social Review 2021: A Social Copy Trading Platform for Crypto
             Traders
           </Text>

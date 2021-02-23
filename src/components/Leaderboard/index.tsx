@@ -27,16 +27,16 @@ function LeaderBoard() {
       <Box>
         <HStack>
           <Icon as={LeaderBoardIcon} />
-          <Text fontSize="1xl" color="white">
+          <Text textStyle="cardTitle" color="white">
             Leaderboard
           </Text>
         </HStack>
-        <Text fontSize="4xl" color="#f5be23" marginTop="150px">
+        <Text textStyle="cardSubTitle" color="#f5be23" marginTop="150px">
           Find the best traders
           <br />
           <span style={{ color: "white" }}>to follow and copy.</span>
         </Text>
-        <Text color="darkGray">
+        <Text textStyle="cardText" color="darkGray" marginTop="4">
           Traders’ performance is displayed on the Leaderboard for ultimate
           bragging rights. Find the best traders to follow and learn from, based
           on performance, risk, and consistency.
@@ -48,13 +48,15 @@ function LeaderBoard() {
           marginRight="2"
           height="3rem"
           width="20rem"
-          fontSize="xl"
+          textStyle="callToAction"
         >
           See the Leaderboard
         </Button>
       </Box>
       <Box paddingLeft="10">
-        <Text color="darkGray">Rankings this month:</Text>
+        <Text textStyle="cardText" color="darkGray">
+          Rankings this month:
+        </Text>
         <Img src="img/leaderboard.png" w="360px" paddingTop="2" />
       </Box>
     </SimpleGrid>

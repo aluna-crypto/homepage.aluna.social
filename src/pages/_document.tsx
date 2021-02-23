@@ -7,8 +7,22 @@ export default class Document extends NextDocument {
       <Html>
         <Head>
           <link
-            href="https://fonts.googleapis.com/css?family=Roboto:400&display=swap"
-            rel="stylesheet"
+            rel="preload"
+            href="/fonts/Roboto-Light.ttf"
+            as="font"
+            crossOrigin=""
+          />
+          <link
+            rel="preload"
+            href="/fonts/Roboto-Regular.ttf"
+            as="font"
+            crossOrigin=""
+          />
+          <link
+            rel="preload"
+            href="/fonts/Roboto-Medium.ttf"
+            as="font"
+            crossOrigin=""
           />
         </Head>
         <body>
