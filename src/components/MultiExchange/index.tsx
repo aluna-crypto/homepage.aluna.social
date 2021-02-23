@@ -10,7 +10,7 @@ import Poloniex from "../atoms/icons/Poloniex";
 function MultiExchange() {
   return (
     <VStack
-      backgroundImage="url('img/overview.jpg')"
+      backgroundImage="url('https://aluna-homepage.herokuapp.com/img/overview.jpg')"
       // backgroundImage="url('multi.png')"
       backgroundSize="cover"
       minHeight="566px"
