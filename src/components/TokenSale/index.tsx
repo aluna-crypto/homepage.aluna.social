@@ -15,9 +15,12 @@ import Pdxdao from "../atoms/icons/Pdxdao/Index";
 import Pgbv from "../atoms/icons/Pgbv/Index";
 import Link from "next/link";
 import Ppow from "../atoms/icons/Ppow/Index";
+import Pdaomaker from "../atoms/icons/Pdaomaker/Index";
+import Pdexforce from "../atoms/icons/Pdexforce/Index";
 
 function TokenSale() {
   const columns = useBreakpointValue({ base: 1, md: 2 });
+  const widthBreakPoint = useBreakpointValue({ base: "50%", md: "100%" });
 
   return (
     <SimpleGrid
@@ -55,7 +58,12 @@ function TokenSale() {
         <Text textStyle="cardSubTitle" color="white">
           Public Token Sale
         </Text>
-        <Text color="darkGray" fontSize="14px" marginTop="5">
+        <Text
+          color="darkGray"
+          width={widthBreakPoint}
+          fontSize="14px"
+          marginTop="5"
+        >
           Use the Aluna Social Token (ALN) to earn incentives, spend against
           monthly subscription fees, play prediction games, stake, farm, govern
           and much more (all coming soon).
@@ -107,10 +115,20 @@ function TokenSale() {
             </a>
           </Link>
         </HStack>
-        <HStack>
+        <HStack spacing="5">
           <Link href="http://proofofwork.media/">
             <a target="_blank" rel="nofollow noopener noreferrer">
               <Ppow />
+            </a>
+          </Link>
+          <Link href="https://dextforce.medium.com/">
+            <a target="_blank" rel="nofollow noopener noreferrer">
+              <Pdexforce />
+            </a>
+          </Link>
+          <Link href="https://daomaker.com/">
+            <a target="_blank" rel="nofollow noopener noreferrer">
+              <Pdaomaker />
             </a>
           </Link>
         </HStack>

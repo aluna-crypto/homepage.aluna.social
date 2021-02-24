@@ -6,22 +6,27 @@ import {
   Img,
   SimpleGrid,
   Text,
+  useBreakpointValue,
 } from "@chakra-ui/react";
+import Link from "next/link";
 import React from "react";
 import LeaderBoardIcon from "../atoms/icons/Leaderboard/Index";
 
 function LeaderBoard() {
+  const columns = useBreakpointValue({ base: 1, sm: 2, md: 2 });
+  const hiddeMobile = useBreakpointValue({ base: true, sm: false });
   return (
     <SimpleGrid
-      columns={2}
+      columns={columns}
       // backgroundImage="url('leaderboard.png')"
       backgroundImage="url('https://aluna-homepage.herokuapp.com/img/moon.jpg')"
-      backgroundSize="cover"
+      backgroundSize={hiddeMobile ? "contain" : "cover"}
       backgroundRepeat="no-repeat"
       minHeight="566px"
       width="100%"
       align="left"
       padding="10"
+      spacing="4"
       borderRadius="2xl"
     >
       <Box>
@@ -31,29 +36,46 @@ function LeaderBoard() {
             Leaderboard
           </Text>
         </HStack>
-        <Text textStyle="cardSubTitle" color="#f5be23" marginTop="150px">
+        <Text
+          textStyle="cardSubTitle"
+          color="#f5be23"
+          marginTop={hiddeMobile ? "40px" : "150px"}
+        >
           Find the best traders
           <br />
           <span style={{ color: "white" }}>to follow and copy.</span>
         </Text>
-        <Text textStyle="cardText" color="darkGray" marginTop="4">
+        <Text
+          textStyle="cardText"
+          color="darkGray"
+          marginTop="4"
+          width="22.5rem"
+        >
           Traders’ performance is displayed on the Leaderboard for ultimate
           bragging rights. Find the best traders to follow and learn from, based
           on performance, risk, and consistency.
         </Text>
-        <Button
-          marginTop="7"
-          colorScheme="brand"
-          color="white"
-          marginRight="2"
-          height="3rem"
-          width="20rem"
-          textStyle="callToAction"
-        >
-          See the Leaderboard
-        </Button>
+        <Img
+          hidden={!hiddeMobile}
+          src="https://aluna-homepage.herokuapp.com/img/leaderboard.png"
+          w="22.5rem"
+          paddingTop="4"
+        />
+        <Link href="https://aluna.social/leaderboard">
+          <Button
+            marginTop={hiddeMobile ? 2 : 7}
+            colorScheme="brand"
+            color="white"
+            marginRight="2"
+            height="3rem"
+            width="22.5rem"
+            textStyle="callToAction"
+          >
+            See the Leaderboard
+          </Button>
+        </Link>
       </Box>
-      <Box paddingLeft="10">
+      <Box padding="10" hidden={hiddeMobile}>
         <Text textStyle="cardText" color="darkGray">
           Rankings this month:
         </Text>

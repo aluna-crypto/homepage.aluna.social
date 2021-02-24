@@ -1,4 +1,4 @@
-import { Box, Button, Text, VStack } from "@chakra-ui/react";
+import { Box, Button, Link, Text, VStack } from "@chakra-ui/react";
 import React from "react";
 
 function GetStarted() {
@@ -8,9 +8,9 @@ function GetStarted() {
       minHeight="566px"
       width="100%"
       align="center"
-      padding="10"
+      padding="3"
     >
-      <VStack padding="40">
+      <VStack>
         <Text fontSize="5rem" color="white" fontFamily="Roboto300">
           Get started.
         </Text>
@@ -28,17 +28,19 @@ function GetStarted() {
             your first exchange.
           </span>
         </Text>
-        <Button
-          marginTop="1.5rem !important"
-          colorScheme="brand"
-          color="white"
-          marginRight="2"
-          height="3rem"
-          width="20rem"
-          textStyle="callToAction"
-        >
-          Create an account
-        </Button>
+        <Link href="https://aluna.social/signin">
+          <Button
+            marginTop="1.5rem !important"
+            colorScheme="brand"
+            color="white"
+            marginRight="2"
+            height="3rem"
+            width="20rem"
+            textStyle="callToAction"
+          >
+            Create an account
+          </Button>
+        </Link>
       </VStack>
     </Box>
   );

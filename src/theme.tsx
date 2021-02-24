@@ -8,10 +8,11 @@ const fonts = {
 };
 
 const breakpoints = createBreakpoints({
-  sm: "40em",
-  md: "52em",
-  lg: "64em",
-  xl: "80em",
+  base: "32em",
+  sm: "52em",
+  md: "64em",
+  lg: "80em",
+  xl: "96em",
 });
 
 const theme = extendTheme({
@@ -59,6 +60,7 @@ const theme = extendTheme({
         lineHeight: "tall",
       },
       a: {
+        textDecoration: "none",
         color: "teal.500",
       },
     },
@@ -70,11 +72,11 @@ const theme = extendTheme({
       50: "#0000ff",
       100: "#0000ff",
       200: "#242424", // normal
-      300: "#8E5CFF", // hover
-      400: "#00ff00", // pressed
+      300: "#242424", // hover
+      400: "#242424", // pressed
       500: "#242424", // no javascript - normal
-      600: "#ff0000", // no javascript - hover
-      700: "#00ff00", // no javascript - press
+      600: "#242424", // no javascript - hover
+      700: "#242424", // no javascript - press
       800: "#0000ff",
       900: "#0000ff",
     },

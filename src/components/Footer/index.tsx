@@ -28,7 +28,7 @@ function Footer() {
       align="center"
       borderTop="1px solid #2b2b2b"
     >
-      <Box minHeight="408px" width="900px" align="left" padding="10">
+      <Box minHeight="408px" maxW="900px" align="left" padding="10">
         <VStack align="left">
           <HStack>
             <Icon as={Aluna} />

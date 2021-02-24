@@ -1,8 +1,16 @@
-import { Box, Img, SimpleGrid, Text, VStack } from "@chakra-ui/react";
+import {
+  Box,
+  Img,
+  SimpleGrid,
+  Text,
+  useBreakpointValue,
+  VStack,
+} from "@chakra-ui/react";
 import Link from "next/link";
 import React from "react";
 
 function OpinionsReviews() {
+  const columns = useBreakpointValue({ base: 1, sm: 2, md: 3 });
   return (
     <Box
       // backgroundImage="url('reviews.png')"
@@ -14,10 +22,10 @@ function OpinionsReviews() {
       align="left"
       padding="10"
     >
-      <Text textStyle="cardTitle" color="white">
+      <Text textStyle="cardSubTitle" color="white">
         Opinions & Reviews
       </Text>
-      <SimpleGrid columns={3} spacingX="9" marginTop="70px">
+      <SimpleGrid columns={columns} spacingX="9" spacingY="9" marginTop="70px">
         <VStack spacing="5" alignItems="flex-start">
           <Text color="darkGray" textStyle="testimonials">
             “I really like the ability to view trades across various exchanges
@@ -106,9 +114,11 @@ function OpinionsReviews() {
             paddingLeft="6"
             w="111px"
           />
-          <Text color="darkGray" paddingLeft="6">
-            blog.coindecap.com
-          </Text>
+          <Link href="https://coincap.io/" passHref>
+            <Text as="a" color="darkGray" paddingLeft="6">
+              blog.coindecap.com
+            </Text>
+          </Link>
         </VStack>
       </SimpleGrid>
     </Box>

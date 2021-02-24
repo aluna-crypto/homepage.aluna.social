@@ -1,13 +1,24 @@
-import { Box, HStack, Icon, Img, SimpleGrid, Text } from "@chakra-ui/react";
+import {
+  Box,
+  HStack,
+  Icon,
+  Img,
+  SimpleGrid,
+  Text,
+  useBreakpointValue,
+} from "@chakra-ui/react";
 import React from "react";
 import CopyTrading from "../atoms/icons/CopyTrading/Index";
 import Insights from "../atoms/icons/Insights/Index";
 
 function InsightsCopy() {
+  const columns = useBreakpointValue({ base: 1, md: 2 });
+  const hiddeMobile = useBreakpointValue({ base: true, sm: false });
+
   return (
     <SimpleGrid
       // backgroundImage="url('insightscopy.png')"
-      columns={2}
+      columns={columns}
       minHeight="566px"
       width="100%"
       align="left"
@@ -15,9 +26,12 @@ function InsightsCopy() {
     >
       <Box
         backgroundImage="url('img/insights.png')"
-        backgroundSize="cover"
+        backgroundSize={"cover"}
+        backgroundPosition={hiddeMobile ? "center" : ""}
+        backgroundRepeat="no-repeat"
         padding="10"
         borderRadius="2xl"
+        minH="566px"
       >
         <HStack>
           <Icon as={Insights} />

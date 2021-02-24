@@ -93,7 +93,7 @@ const Index = () => {
         backgroundImage="url('https://aluna-homepage.herokuapp.com/img/hero.jpg')"
         backgroundRepeat="no-repeat"
       >
-        <VStack spacing={6} maxWidth="900px">
+        <VStack spacing={6} marginX="2" maxWidth="900px">
           <Banner />
           <MultiExchange />
           <PublicProfile />
