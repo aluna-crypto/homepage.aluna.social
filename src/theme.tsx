@@ -68,6 +68,7 @@ const theme = extendTheme({
   colors: {
     nero: "#141414",
     darkGray: "#b1b1b1",
+    headerLinkColor: "#8e5cff",
     brandColor: "#7547DC",
     dark: {
       50: "#0000ff",

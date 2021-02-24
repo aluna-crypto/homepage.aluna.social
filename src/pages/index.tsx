@@ -16,7 +16,7 @@ import {
   Icon,
   HStack,
   Center,
-  Spacer,
+  // Spacer,
   Box,
 } from "@chakra-ui/react";
 import React from "react";
@@ -39,11 +39,13 @@ import Medium from "../components/atoms/icons/Medium/Index";
 import Telegram from "../components/atoms/icons/Telegram/Index";
 import Twitter from "../components/atoms/icons/Twitter/Index";
 import Youtube from "../components/atoms/icons/Youtube/Index";
+import AlunaToken from "../components/atoms/icons/AlunaToken/Index";
 
 const Index = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   // make it full with for narrow version of the website
   const sidebarWidth = useBreakpointValue({ base: "full", sm: "xs" });
+  const hiddeMobile = useBreakpointValue({ base: true, sm: false });
 
   return (
     <>
@@ -55,8 +57,9 @@ const Index = () => {
         padding="5"
         justifyContent="space-between"
         zIndex="sticky"
+        bgGradient="linear(to-b, rgba(20,20,20,0.8), rgba(20,20,20,0))"
       >
-        <Flex alignItems="self-start">
+        <Flex justifyContent="space-between" alignItems="self-start">
           <Link href="https://aluna.social">
             <a>
               <HStack>
@@ -65,12 +68,12 @@ const Index = () => {
               </HStack>
             </a>
           </Link>
-          <Center w="120px" marginLeft="4">
+          <Center hidden={hiddeMobile} w="120px" marginLeft="4">
             <Link href="https://aluna.social/insights" passHref>
               <a>Trade on Aluna</a>
             </Link>
           </Center>
-          <Center w="120px">
+          <Center hidden={hiddeMobile} w="120px">
             <Link href="https://aluna.social/token" passHref>
               <a>Aluna Token</a>
             </Link>
@@ -82,9 +85,13 @@ const Index = () => {
               <a>Sign In</a>
             </Link>
           </Center>
-          <Center w="120px" marginRight="8">
+          <Center w="120px" marginRight="8" color="brandColor">
             <Link href="https://aluna.social/signup" passHref>
-              <a>Create Account</a>
+              <a>
+                <Text fontFamily="Roboto300" color="headerLinkColor">
+                  Create Account
+                </Text>
+              </a>
             </Link>
           </Center>
           <Button onClick={onOpen} colorScheme="burger">
@@ -107,11 +114,55 @@ const Index = () => {
         <DrawerOverlay />
         <DrawerContent backgroundColor="#1d1d1c" color="#b1b1b1">
           <DrawerCloseButton />
-          <Spacer />
           {/* <DrawerHeader>Create your account</DrawerHeader> */}
           <DrawerBody>
             <VStack alignItems="self-start" spacing="4">
+              <Box w="100%" marginTop="40">
+                <Text textStyle="cardText" marginBottom="2">
+                  Further reading
+                </Text>
+                <Link href="https://aluna.social/insights">
+                  <a>
+                    <HStack
+                      textStyle="callToAction"
+                      color="darkGray"
+                      spacing="3"
+                    >
+                      <Aluna />
+                      <span>Aluna Platform Overview</span>
+                    </HStack>
+                  </a>
+                </Link>
+              </Box>
               <Box w="100%">
+                <Link href="https://aluna.social/token">
+                  <a>
+                    <HStack
+                      textStyle="callToAction"
+                      color="darkGray"
+                      spacing="3"
+                    >
+                      <AlunaToken />
+                      <span>Aluna Token</span>
+                    </HStack>
+                  </a>
+                </Link>
+              </Box>
+              <Box w="100%">
+                <Link href="https://aluna.social/token">
+                  <a target="_blank" rel="nofollow noopener noreferrer">
+                    <HStack
+                      textStyle="callToAction"
+                      color="darkGray"
+                      spacing="3"
+                    >
+                      <Medium />
+                      <span>Medium Articles</span>
+                    </HStack>
+                  </a>
+                </Link>
+              </Box>
+              <Box w="100%" marginTop="60px !important">
                 <Text textStyle="cardText">Try the Aluna Platform</Text>
                 <Link href="https://aluna.social/insights">
                   <Button
@@ -126,7 +177,7 @@ const Index = () => {
                   </Button>
                 </Link>
               </Box>
-              <Box>
+              <Box marginTop="60px !important">
                 <Text textStyle="cardText">More</Text>
                 <HStack>
                   <Link href="https://twitter.com/AlunaSocial">
@@ -159,7 +210,28 @@ const Index = () => {
             </VStack>
           </DrawerBody>
           <DrawerFooter textAlign="left">
-            <Text>Contact Us</Text>
+            <VStack alignItems="flex-start">
+              <Link href="https://aluna.social/contact" passHref>
+                <Text>Contact Us</Text>
+              </Link>
+              <HStack>
+                <Link href="https://aluna.social/privacy-policy" passHref>
+                  <a>
+                    <Text textStyle="testimonials">Privacy •</Text>
+                  </a>
+                </Link>
+                <Link href="https://aluna.social/terms-and-conditions">
+                  <a>
+                    <Text textStyle="testimonials">Terms & Conditions •</Text>
+                  </a>
+                </Link>
+                <Link href="https://aluna.social/about-us">
+                  <a>
+                    <Text textStyle="testimonials">• About us</Text>
+                  </a>
+                </Link>
+              </HStack>
+            </VStack>
           </DrawerFooter>
         </DrawerContent>
       </Drawer>
