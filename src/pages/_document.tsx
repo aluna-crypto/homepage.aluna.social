@@ -37,7 +37,23 @@ export default class Document extends NextDocument {
           />
           <meta name="twitter:site" content="https://aluna.social" />
           <meta name="twitter:creator" content="@AlunaSocial" />
-          <link rel="icon" type="image/png" href="favicon.ico" />
+          <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="https://aluna.social/img/apple-touch-icon.png"
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="https://aluna.social/img/favicon-32x32.png"
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="https://aluna.social/img/favicon-16x16.png"
+          />
           <link rel="apple-touch-icon" href="favicon.ico" />
           <meta
             property="og:image"
