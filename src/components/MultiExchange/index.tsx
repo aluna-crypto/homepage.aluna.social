@@ -19,11 +19,15 @@ function MultiExchange() {
   return (
     <VStack
       marginTop="6.5rem !important"
+      backgroundColor="#1d1d1c"
       backgroundImage={`url('https://aluna-homepage.herokuapp.com/img/overview${
         hiddeMobile ? "-mobile" : ""
       }.jpg')`}
       // backgroundImage="url('multi.png')"
-      backgroundSize="cover"
+      backgroundSize="contain"
+      backgroundPosition="right"
+      // backgroundRepeat="repeat-y"
+      backgroundRepeat="no-repeat"
       minHeight="566px"
       width="100%"
       align="left"
