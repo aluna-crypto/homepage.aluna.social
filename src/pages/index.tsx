@@ -61,12 +61,14 @@ const Index = () => {
         bgGradient="linear(to-b, rgba(20,20,20,0.8), rgba(20,20,20,0))"
       >
         <Flex justifyContent="space-between" alignItems="self-start">
-          <Center hidden={hiddeMobile} w="150px" marginLeft="4">
+          <Center w="150px" marginLeft="4">
             <Link href="https://aluna.social">
               <a>
                 <HStack spacing="4">
                   <Aluna />
-                  <AlunaLogo />
+                  <Box hidden={hiddeMobile}>
+                    <AlunaLogo />
+                  </Box>
                 </HStack>
               </a>
             </Link>
