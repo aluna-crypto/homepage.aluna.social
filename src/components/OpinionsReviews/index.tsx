@@ -115,9 +115,11 @@ function OpinionsReviews() {
             w="111px"
           />
           <Link href="https://coincap.io/" passHref>
-            <Text as="a" color="darkGray" paddingLeft="6">
-              blog.coindecap.com
-            </Text>
+            <a target="_blank" rel="nofollow noopener noreferrer">
+              <Text color="darkGray" paddingLeft="6">
+                blog.coindecap.com
+              </Text>
+            </a>
           </Link>
         </VStack>
       </SimpleGrid>

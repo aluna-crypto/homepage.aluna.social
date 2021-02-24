@@ -4,11 +4,11 @@ import {
   HStack,
   Icon,
   Img,
-  Link,
   SimpleGrid,
   Text,
   useBreakpointValue,
 } from "@chakra-ui/react";
+import Link from "next/link";
 import React from "react";
 import Profile from "../atoms/icons/Profile/Index";
 
@@ -61,19 +61,19 @@ function PublicProfile() {
           maxW="22.5rem"
           paddingTop="4"
         />
-        <Link href="https://aluna.social/signup">
-          <Button
-            marginTop={hiddeMobile ? 2 : 7}
-            colorScheme="brand"
-            color="white"
-            marginRight="2"
-            height="3rem"
-            width="22.5rem"
-            textStyle="callToAction"
-          >
+        <Button
+          marginTop={hiddeMobile ? 2 : 7}
+          colorScheme="brand"
+          color="white"
+          marginRight="2"
+          height="3rem"
+          width="22.5rem"
+          textStyle="callToAction"
+        >
+          <Link href="https://aluna.social/signup" passHref>
             Create your own Aluna profile
-          </Button>
-        </Link>
+          </Link>
+        </Button>
       </Box>
 
       <Box paddingLeft="10" hidden={hiddeMobile}>

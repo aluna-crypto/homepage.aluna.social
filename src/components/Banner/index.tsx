@@ -1,4 +1,5 @@
-import { Box, Button, Center, Link, Text, VStack } from "@chakra-ui/react";
+import { Box, Button, Center, Text, VStack } from "@chakra-ui/react";
+import Link from "next/link";
 import React from "react";
 
 interface BannerInterface {}
@@ -15,30 +16,30 @@ function Banner({}: BannerInterface) {
         </Text>
         <VStack spacing={1} align="stretch" paddingTop="10">
           <Center>
-            <Link href="https://aluna.social/signup">
-              <Button
-                colorScheme="brand"
-                marginRight="2"
-                height="3rem"
-                width="10rem"
-                textStyle="callToAction"
-                color="white"
-              >
+            <Button
+              colorScheme="brand"
+              marginRight="2"
+              height="3rem"
+              width="10rem"
+              textStyle="callToAction"
+              color="white"
+            >
+              <Link href="https://aluna.social/signup" passHref>
                 Sign Up
-              </Button>
-            </Link>
-            <Link href="https://aluna.social/insights">
-              <Button
-                colorScheme="dark"
-                marginRight="2"
-                height="3rem"
-                width="10rem"
-                textStyle="callToAction"
-                color="white"
-              >
+              </Link>
+            </Button>
+            <Button
+              colorScheme="dark"
+              marginRight="2"
+              height="3rem"
+              width="10rem"
+              textStyle="callToAction"
+              color="white"
+            >
+              <Link href="https://aluna.social/insights" passHref>
                 See the platform
-              </Button>
-            </Link>
+              </Link>
+            </Button>
           </Center>
           <Center>
             <Text fontSize="1xl" color="darkGray" marginTop="2">

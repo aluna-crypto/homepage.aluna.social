@@ -61,19 +61,19 @@ function LeaderBoard() {
           w="22.5rem"
           paddingTop="4"
         />
-        <Link href="https://aluna.social/leaderboard">
-          <Button
-            marginTop={hiddeMobile ? 2 : 7}
-            colorScheme="brand"
-            color="white"
-            marginRight="2"
-            height="3rem"
-            width="22.5rem"
-            textStyle="callToAction"
-          >
+        <Button
+          marginTop={hiddeMobile ? 2 : 7}
+          colorScheme="brand"
+          color="white"
+          marginRight="2"
+          height="3rem"
+          width="22.5rem"
+          textStyle="callToAction"
+        >
+          <Link href="https://aluna.social/leaderboard" passHref>
             See the Leaderboard
-          </Button>
-        </Link>
+          </Link>
+        </Button>
       </Box>
       <Box padding="10" hidden={hiddeMobile}>
         <Text textStyle="cardText" color="darkGray">

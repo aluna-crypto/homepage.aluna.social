@@ -77,7 +77,9 @@ function TokenSale() {
           width="20rem"
           textStyle="callToAction"
         >
-          Join the Sale
+          <Link href="https://aluna.social/insights" passHref>
+            Join the Sale
+          </Link>
         </Button>
       </Box>
       <Box padding="10" backgroundColor="#1d1d1d" borderRadius="2xl">
@@ -99,34 +101,34 @@ function TokenSale() {
           Aluna Partners and Investors
         </Text>
         <HStack spacing="5" marginTop="4">
-          <Link href="https://www.100x.group/">
+          <Link href="https://www.100x.group/" passHref>
             <a target="_blank" rel="nofollow noopener noreferrer">
               <P100x />
             </a>
           </Link>
-          <Link href="https://gbv.capital/">
+          <Link href="https://gbv.capital/" passHref>
             <a target="_blank" rel="nofollow noopener noreferrer">
               <Pgbv />
             </a>
           </Link>
-          <Link href="https://dxdao.eth.link/">
+          <Link href="https://dxdao.eth.link/" passHref>
             <a target="_blank" rel="nofollow noopener noreferrer">
               <Pdxdao />
             </a>
           </Link>
         </HStack>
         <HStack spacing="5">
-          <Link href="http://proofofwork.media/">
+          <Link href="http://proofofwork.media/" passHref>
             <a target="_blank" rel="nofollow noopener noreferrer">
               <Ppow />
             </a>
           </Link>
-          <Link href="https://twitter.com/DextForce">
+          <Link href="https://twitter.com/DextForce" passHref>
             <a target="_blank" rel="nofollow noopener noreferrer">
               <Pdexforce />
             </a>
           </Link>
-          <Link href="https://daomaker.com/">
+          <Link href="https://daomaker.com/" passHref>
             <a target="_blank" rel="nofollow noopener noreferrer">
               <Pdaomaker />
             </a>
