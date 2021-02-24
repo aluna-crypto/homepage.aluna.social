@@ -105,7 +105,7 @@ const Index = () => {
         size={sidebarWidth}
       >
         <DrawerOverlay />
-        <DrawerContent backgroundColor="#1d1d1c" color="#b1b1b1">
+        <DrawerContent backgroundColor="#1d1d1c" color="darkGray">
           <DrawerCloseButton />
           <Spacer />
           {/* <DrawerHeader>Create your account</DrawerHeader> */}
