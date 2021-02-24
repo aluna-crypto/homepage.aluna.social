@@ -104,7 +104,7 @@ function TokenSale() {
               <P100x />
             </a>
           </Link>
-          <Link href="https://genesisblockhk.com/">
+          <Link href="https://gbv.capital/">
             <a target="_blank" rel="nofollow noopener noreferrer">
               <Pgbv />
             </a>
@@ -121,7 +121,7 @@ function TokenSale() {
               <Ppow />
             </a>
           </Link>
-          <Link href="https://dextforce.medium.com/">
+          <Link href="https://twitter.com/DextForce">
             <a target="_blank" rel="nofollow noopener noreferrer">
               <Pdexforce />
             </a>
