@@ -61,13 +61,14 @@ const theme = extendTheme({
       },
       a: {
         textDecoration: "none",
-        color: "teal.500",
+        color: "white",
       },
     },
   },
   colors: {
     nero: "#141414",
     darkGray: "#b1b1b1",
+    brandColor: "#7547DC",
     dark: {
       50: "#0000ff",
       100: "#0000ff",
@@ -89,6 +90,18 @@ const theme = extendTheme({
       500: "#7547DC", // no javascript - normal
       600: "#8E5CFF", // no javascript - hover
       700: "#8E5CFF", // no javascript - press
+      800: "#0000ff",
+      900: "#0000ff",
+    },
+    burger: {
+      50: "#0000ff",
+      100: "#0000ff",
+      200: "transparent", // normal
+      300: "transparent", // hover
+      400: "transparent", // pressed
+      500: "transparent", // no javascript - normal
+      600: "transparent", // no javascript - hover
+      700: "transparent", // no javascript - press
       800: "#0000ff",
       900: "#0000ff",
     },
