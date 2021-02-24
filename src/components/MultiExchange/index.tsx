@@ -1,4 +1,11 @@
-import { HStack, Icon, Spacer, Text, VStack } from "@chakra-ui/react";
+import {
+  HStack,
+  Icon,
+  Spacer,
+  Text,
+  useBreakpointValue,
+  VStack,
+} from "@chakra-ui/react";
 import React from "react";
 import Binance from "../atoms/icons/Binance/index";
 import Bitfinex from "../atoms/icons/Bitfinex";
@@ -8,13 +15,21 @@ import ConnectedExchange from "../atoms/icons/chain/Index";
 import Poloniex from "../atoms/icons/Poloniex";
 
 function MultiExchange() {
+  const hiddeMobile = useBreakpointValue({ base: true, sm: false });
   return (
     <VStack
       marginTop="6.5rem !important"
-      backgroundImage="url('https://aluna-homepage.herokuapp.com/img/overview.jpg')"
+      backgroundColor="#1d1d1c"
+      backgroundImage={`url('https://aluna-homepage.herokuapp.com/img/overview${
+        hiddeMobile ? "-mobile" : ""
+      }.jpg')`}
       // backgroundImage="url('multi.png')"
-      backgroundSize="cover"
+      backgroundSize="contain"
+      backgroundPosition="right"
+      // backgroundRepeat="repeat-y"
+      backgroundRepeat="no-repeat"
       minHeight="566px"
+      borderRadius="2xl"
       width="100%"
       align="left"
       padding="10"
@@ -32,9 +47,9 @@ function MultiExchange() {
         textStyle="cardSubTitle"
         color="#f5be23"
         marginTop="1.625rem !important"
+        width={hiddeMobile ? "90%" : "60%"}
       >
-        Manage all your exchange <br />
-        accounts
+        Manage all your exchange accounts
         <span style={{ color: "white" }}> from a single interface.</span>
       </Text>
       <Spacer />
