@@ -6,9 +6,6 @@ export default class Document extends NextDocument {
     return (
       <Html>
         <Head>
-          <title>
-            Aluna Social : The Top Multi Exchange Crypto Trading Platform
-          </title>
           <meta
             name="description"
             content="A crypto trading platform enabling traders to manage multiple exchange accounts from one place while leveraging social features and copy trading."
