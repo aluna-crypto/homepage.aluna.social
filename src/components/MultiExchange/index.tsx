@@ -29,6 +29,7 @@ function MultiExchange() {
       // backgroundRepeat="repeat-y"
       backgroundRepeat="no-repeat"
       minHeight="566px"
+      borderRadius="2xl"
       width="100%"
       align="left"
       padding="10"
@@ -46,9 +47,9 @@ function MultiExchange() {
         textStyle="cardSubTitle"
         color="#f5be23"
         marginTop="1.625rem !important"
+        width={hiddeMobile ? "90%" : "60%"}
       >
-        Manage all your exchange <br />
-        accounts
+        Manage all your exchange accounts
         <span style={{ color: "white" }}> from a single interface.</span>
       </Text>
       <Spacer />
