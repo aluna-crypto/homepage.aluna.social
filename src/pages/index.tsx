@@ -40,6 +40,7 @@ import Telegram from "../components/atoms/icons/Telegram/Index";
 import Twitter from "../components/atoms/icons/Twitter/Index";
 import Youtube from "../components/atoms/icons/Youtube/Index";
 import AlunaToken from "../components/atoms/icons/AlunaToken/Index";
+import AlunaLogo from "../components/atoms/icons/AlunaLogo/Index";
 
 const Index = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -60,32 +61,34 @@ const Index = () => {
         bgGradient="linear(to-b, rgba(20,20,20,0.8), rgba(20,20,20,0))"
       >
         <Flex justifyContent="space-between" alignItems="self-start">
-          <Link href="https://aluna.social">
-            <a>
-              <HStack>
-                <Aluna />
-                Aluna
-              </HStack>
-            </a>
-          </Link>
-          <Center hidden={hiddeMobile} w="120px" marginLeft="4">
+          <Center hidden={hiddeMobile} w="150px" marginLeft="4">
+            <Link href="https://aluna.social">
+              <a>
+                <HStack spacing="4">
+                  <Aluna />
+                  <AlunaLogo />
+                </HStack>
+              </a>
+            </Link>
+          </Center>
+          <Center hidden={hiddeMobile} w="120px" paddingTop="1" marginLeft="10">
             <Link href="https://aluna.social/insights" passHref>
               <a>Trade on Aluna</a>
             </Link>
           </Center>
-          <Center hidden={hiddeMobile} w="120px">
+          <Center hidden={hiddeMobile} w="120px" paddingTop="1">
             <Link href="https://aluna.social/token" passHref>
               <a>Aluna Token</a>
             </Link>
           </Center>
         </Flex>
         <Flex>
-          <Center w="120px">
+          <Center w="120px" paddingTop="1">
             <Link href="https://aluna.social/signin" passHref>
               <a>Sign In</a>
             </Link>
           </Center>
-          <Center w="120px" marginRight="8" color="brandColor">
+          <Center w="120px" paddingTop="1" marginRight="8" color="brandColor">
             <Link href="https://aluna.social/signup" passHref>
               <a>
                 <Text fontFamily="Roboto300" color="headerLinkColor">
