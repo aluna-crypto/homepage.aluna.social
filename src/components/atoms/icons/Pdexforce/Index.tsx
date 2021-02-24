@@ -5,8 +5,8 @@ import styles from "./icon.module.css";
 function Pdexforce() {
   return (
     <Icon
-      w="120px"
-      h="80px"
+      w="84px"
+      h="56px"
       viewBox="0 0 120 80"
       className={styles.iconPartners}
     >

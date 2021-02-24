@@ -1,25 +1,24 @@
 import {
   Box,
-  Button,
   HStack,
   Icon,
-  Input,
-  InputGroup,
-  InputRightAddon,
   SimpleGrid,
   Text,
+  useBreakpointValue,
   VStack,
 } from "@chakra-ui/react";
+import Link from "next/link";
 import React from "react";
 import Aluna from "../atoms/icons/Aluna/Index";
-import Twitter from "../atoms/icons/Twitter/Index";
+import Discord from "../atoms/icons/Discord/Index";
 import Medium from "../atoms/icons/Medium/Index";
 import Telegram from "../atoms/icons/Telegram/Index";
-import Discord from "../atoms/icons/Discord/Index";
+import Twitter from "../atoms/icons/Twitter/Index";
 import Youtube from "../atoms/icons/Youtube/Index";
-import Link from "next/link";
+import Subscribe from "./subscribe";
 
 function Footer() {
+  const hiddeMobile = useBreakpointValue({ base: true, sm: false });
   return (
     <Box
       // backgroundImage="url('footer.png')"
@@ -48,6 +47,17 @@ function Footer() {
               </Text>
             </a>
           </Link>
+          <VStack
+            maxW="320px"
+            alignItems="self-start"
+            marginTop="50px !important"
+            hidden={!hiddeMobile}
+          >
+            <Text textStyle="cardText" color="darkGray">
+              GET UPDATES
+            </Text>
+            <Subscribe />
+          </VStack>
         </VStack>
 
         <SimpleGrid columns={2} templateColumns="1fr 3fr " marginTop="10">
@@ -86,30 +96,11 @@ function Footer() {
               © Aluna.Social 2020
             </Text>
           </VStack>
-          <VStack maxW="320px" alignItems="self-start">
+          <VStack maxW="320px" hidden={hiddeMobile} alignItems="self-start">
             <Text textStyle="cardText" color="darkGray">
               GET UPDATES
             </Text>
-            <InputGroup
-              size="sm"
-              borderColor="#242424"
-              backgroundColor="#242424"
-              borderRadius="2xl"
-            >
-              <Input placeholder="Your email" color="white" />
-              <InputRightAddon paddingLeft="0" paddingRight="0">
-                <Button
-                  colorScheme="brand"
-                  color="white"
-                  marginRight="2"
-                  width="100%"
-                  fontSize="0.8rem"
-                  margin="0"
-                >
-                  Subscribe
-                </Button>
-              </InputRightAddon>
-            </InputGroup>
+            <Subscribe />
           </VStack>
         </SimpleGrid>
       </Box>
