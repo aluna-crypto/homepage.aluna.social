@@ -93,7 +93,7 @@ const Index = () => {
         </Flex>
         <Flex>
           <Center paddingTop="1">
-            <Link href="https://aluna.social/signin" passHref>
+            <Link href="https://aluna.social/login" passHref>
               <a>Sign In</a>
             </Link>
           </Center>
