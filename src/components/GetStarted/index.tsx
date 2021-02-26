@@ -12,7 +12,7 @@ function GetStarted() {
       padding="3"
     >
       <VStack>
-        <Text fontSize="5rem" color="white" fontFamily="Roboto300">
+        <Text fontSize="5rem" color="white" fontFamily="Roboto300" as="h2">
           Get started.
         </Text>
         <Text
@@ -20,6 +20,7 @@ function GetStarted() {
           color="#f5be23"
           fontFamily="Roboto"
           marginTop="20"
+          as="h3"
         >
           Create a free account
           <span style={{ color: "white" }}>

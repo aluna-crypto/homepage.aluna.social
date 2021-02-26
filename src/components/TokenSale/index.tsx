@@ -45,18 +45,19 @@ function TokenSale() {
             w="40px"
             src="https://aluna-homepage.herokuapp.com/img/aluna-bright.png"
           />
-          <Text textStyle="cardTitle" color="white">
+          <Text textStyle="cardTitle" color="white" as="h2">
             Public Token Sale
           </Text>
         </HStack>
         <Text textStyle="cardTitle" color="#f34a34" marginTop="110px">
           Starts: March 1st, 2021
         </Text>
-        <Text textStyle="cardSubTitle" color="#f5be23" marginTop="5">
-          Join the ALN
-        </Text>
-        <Text textStyle="cardSubTitle" color="white">
-          Public Token Sale
+        <Text textStyle="cardSubTitle" color="#f5be23" marginTop="5" as="h3">
+          Join the ALN{" "}
+          <span style={{ color: "white" }}>
+            <br />
+            Public Token Sale
+          </span>
         </Text>
         <Text
           color="darkGray"
@@ -84,11 +85,11 @@ function TokenSale() {
       <Box padding="10" backgroundColor="#1d1d1d" borderRadius="2xl">
         <HStack>
           <Icon as={Partnerships} />
-          <Text textStyle="cardTitle" color="white">
+          <Text textStyle="cardTitle" color="white" as="h2">
             Partnerships
           </Text>
         </HStack>
-        <Text textStyle="cardSubTitle" color="#f5be23" marginTop="6">
+        <Text textStyle="cardSubTitle" color="#f5be23" marginTop="6" as="h3">
           Trusted partners
           <br />
           <span style={{ color: "white" }}>to rely on the future.</span>

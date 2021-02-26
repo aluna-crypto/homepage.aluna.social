@@ -11,7 +11,7 @@ function Banner({}: BannerInterface) {
           The social trading
           <br /> terminal we deserve.
         </Text>
-        <Text fontSize="1.5rem">
+        <Text as="h2" fontSize="1.5rem">
           Learn, copy and earn with the best crypto traders in the world.
         </Text>
         <VStack spacing={1} align="stretch" paddingTop="10">

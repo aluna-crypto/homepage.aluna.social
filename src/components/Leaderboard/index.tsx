@@ -32,7 +32,7 @@ function LeaderBoard() {
       <Box>
         <HStack>
           <Icon as={LeaderBoardIcon} />
-          <Text textStyle="cardTitle" color="white">
+          <Text textStyle="cardTitle" color="white" as="h2">
             Leaderboard
           </Text>
         </HStack>
@@ -40,6 +40,7 @@ function LeaderBoard() {
           textStyle="cardSubTitle"
           color="#f5be23"
           marginTop={{ base: "40px", sm: "150px" }}
+          as="h3"
         >
           Find the best traders
           <br />
@@ -79,6 +80,7 @@ function LeaderBoard() {
         </Text>
         <Img
           src="https://aluna-homepage.herokuapp.com/img/leaderboard.png"
+          alt="Find the best traders to follow and copy"
           paddingTop="2"
         />
       </Box>

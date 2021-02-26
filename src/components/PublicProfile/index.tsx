@@ -35,11 +35,16 @@ function PublicProfile() {
       <Box>
         <HStack>
           <Icon as={Profile} />
-          <Text textStyle="cardTitle" color="white">
+          <Text textStyle="cardTitle" color="white" as="h2">
             Public Profiles
           </Text>
         </HStack>
-        <Text textStyle="cardSubTitle" color="#f5be23" marginTop="200px">
+        <Text
+          textStyle="cardSubTitle"
+          color="#f5be23"
+          as="h3"
+          marginTop="200px"
+        >
           Build{" "}
           <span style={{ color: "white" }}>
             the ultimate
@@ -76,7 +81,10 @@ function PublicProfile() {
         paddingTop={{ base: "10" }}
         display={{ base: "none", sm: "block" }}
       >
-        <Img src="https://aluna-homepage.herokuapp.com/img/profiles.png" />
+        <Img
+          alt="Build the ultimate trader profile."
+          src="https://aluna-homepage.herokuapp.com/img/profiles.png"
+        />
       </Box>
     </SimpleGrid>
   );

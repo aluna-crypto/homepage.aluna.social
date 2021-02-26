@@ -32,7 +32,7 @@ function MultiExchange() {
     >
       <HStack>
         <Icon as={ConnectedExchange} />
-        <Text textStyle="cardTitle" color="white">
+        <Text textStyle="cardTitle" color="white" as="h2">
           Multi Exchange Terminal
         </Text>
       </HStack>
@@ -42,6 +42,7 @@ function MultiExchange() {
         color="#f5be23"
         marginTop="1.625rem !important"
         width={{ base: "90%", sm: "60%" }}
+        as="h3"
       >
         Manage all your exchange accounts
         <span style={{ color: "white" }}> from a single interface.</span>

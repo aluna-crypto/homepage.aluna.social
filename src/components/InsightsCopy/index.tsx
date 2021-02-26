@@ -34,11 +34,11 @@ function InsightsCopy() {
       >
         <HStack>
           <Icon as={Insights} />
-          <Text textStyle="cardTitle" color="white">
+          <Text textStyle="cardTitle" color="white" as="h2">
             Insights Feed
           </Text>
         </HStack>
-        <Text textStyle="cardSubTitle" color="#f5be23" marginTop="6">
+        <Text textStyle="cardSubTitle" color="#f5be23" as="h3" marginTop="6">
           Get insights{" "}
           <span style={{ color: "white" }}>& live updates on your feed.</span>
         </Text>
@@ -47,7 +47,7 @@ function InsightsCopy() {
       <Box padding="10" backgroundColor="#1f183b" borderRadius="2xl">
         <HStack>
           <Icon as={CopyTrading} />
-          <Text textStyle="cardTitle" color="white">
+          <Text textStyle="cardTitle" color="white" as="h2">
             Copy Trading
           </Text>
         </HStack>
@@ -55,6 +55,7 @@ function InsightsCopy() {
         <Box w="100%" paddingTop="70px" paddingLeft="70px">
           <Img
             alignSelf="center"
+            alt="Copy Trading"
             src="https://aluna-homepage.herokuapp.com/img/copy-counter-copy.png"
             w="222px"
           />
@@ -63,7 +64,12 @@ function InsightsCopy() {
         <Text textStyle="cardSubTitle" color="#f5be23" marginTop="10">
           New to trading?
         </Text>
-        <Text textStyle="cardTextHighlighted" color="#f5be23" marginTop="4">
+        <Text
+          textStyle="cardTextHighlighted"
+          color="#f5be23"
+          marginTop="4"
+          as="h3"
+        >
           Copy the best traders{" "}
           <span style={{ color: "white" }}>
             from around the world or counter-copy the worst.

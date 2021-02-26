@@ -22,7 +22,7 @@ function OpinionsReviews() {
       align="left"
       padding="10"
     >
-      <Text textStyle="cardSubTitle" color="white">
+      <Text textStyle="cardSubTitle" color="white" as="h2">
         Opinions & Reviews
       </Text>
       <SimpleGrid columns={columns} spacingX="9" spacingY="9" marginTop="70px">
