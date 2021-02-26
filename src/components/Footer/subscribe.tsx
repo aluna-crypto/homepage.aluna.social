@@ -29,6 +29,7 @@ function Subscribe() {
     const result = await res.json();
     console.log("result ", result);
     if (result.ok) {
+      setEmail("");
       toast({
         title: "Email subscribe successfully.",
         // description: "We've created your account for you.",
@@ -49,35 +50,42 @@ function Subscribe() {
   };
   return (
     <div>
-      <InputGroup
-        size="sm"
-        borderColor="#242424"
-        backgroundColor="#242424"
-        borderRadius="2xl"
+      <form
+        onSubmit={(ev) => {
+          ev.preventDefault();
+          registerUser();
+        }}
       >
-        <Input
-          placeholder="Your email"
-          value={email}
-          type="email"
-          required
-          onChange={(ev) => setEmail(ev.currentTarget.value)}
-          color="white"
-        />
-        <InputRightAddon paddingLeft="0" overflow="hidden" paddingRight="0">
-          <Button
-            colorScheme="brand"
+        <InputGroup
+          size="sm"
+          borderColor="#242424"
+          backgroundColor="#242424"
+          borderRadius="2xl"
+        >
+          <Input
+            placeholder="Your email"
+            value={email}
+            type="email"
+            required
+            onChange={(ev) => setEmail(ev.currentTarget.value)}
             color="white"
-            marginRight="2"
-            width="100%"
-            fontSize="0.8rem"
-            margin="0"
-            type="submit"
-            onClick={registerUser}
-          >
-            Subscribe
-          </Button>
-        </InputRightAddon>
-      </InputGroup>
+          />
+          <InputRightAddon paddingLeft="0" overflow="hidden" paddingRight="0">
+            <Button
+              type="submit"
+              colorScheme="brand"
+              color="white"
+              marginRight="2"
+              width="100%"
+              fontSize="0.8rem"
+              margin="0"
+              onClick={registerUser}
+            >
+              Subscribe
+            </Button>
+          </InputRightAddon>
+        </InputGroup>
+      </form>
     </div>
   );
 }
