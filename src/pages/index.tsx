@@ -138,7 +138,7 @@ const Index = () => {
                 <Text textStyle="cardText" marginBottom="2">
                   Further reading
                 </Text>
-                <Link href="https://aluna.social/insights">
+                <Link href="https://aluna.social/platform-overview">
                   <a>
                     <HStack
                       textStyle="callToAction"
@@ -166,7 +166,7 @@ const Index = () => {
                 </Link>
               </Box>
               <Box w="100%">
-                <Link href="https://aluna.social/token">
+                <Link href="https://medium.com/@aluna">
                   <a target="_blank" rel="nofollow noopener noreferrer">
                     <HStack
                       textStyle="callToAction"
@@ -185,7 +185,6 @@ const Index = () => {
                   <Button
                     marginTop="2"
                     colorScheme="brand"
-                    height="3rem"
                     width="100%"
                     textStyle="callToAction"
                     color="white"
