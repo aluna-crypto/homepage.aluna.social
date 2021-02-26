@@ -14,13 +14,13 @@ import LeaderBoardIcon from "../atoms/icons/Leaderboard/Index";
 
 function LeaderBoard() {
   const columns = useBreakpointValue({ base: 1, sm: 2, md: 2 });
-  const hiddeMobile = useBreakpointValue({ base: true, sm: false });
   return (
     <SimpleGrid
       columns={columns}
       // backgroundImage="url('leaderboard.png')"
+      backgroundColor="black"
       backgroundImage="url('https://aluna-homepage.herokuapp.com/img/moon.jpg')"
-      backgroundSize={hiddeMobile ? "contain" : "cover"}
+      backgroundSize={{ base: "contain", sm: "cover" }}
       backgroundRepeat="no-repeat"
       minHeight="566px"
       width="100%"
@@ -56,7 +56,7 @@ function LeaderBoard() {
           paddingTop="4"
         />
         <Button
-          marginTop={hiddeMobile ? 2 : 7}
+          marginTop={{ base: 2, sm: 7 }}
           colorScheme="brand"
           color="white"
           marginRight="2"

@@ -13,7 +13,6 @@ import Insights from "../atoms/icons/Insights/Index";
 
 function InsightsCopy() {
   const columns = useBreakpointValue({ base: 1, md: 2 });
-  const hiddeMobile = useBreakpointValue({ base: true, sm: false });
 
   return (
     <SimpleGrid
@@ -27,7 +26,7 @@ function InsightsCopy() {
       <Box
         backgroundImage="url('img/insights.png')"
         backgroundSize={"cover"}
-        backgroundPosition={hiddeMobile ? "center" : ""}
+        backgroundPosition={{ base: "center", sm: "" }}
         backgroundRepeat="no-repeat"
         padding="10"
         borderRadius="2xl"
