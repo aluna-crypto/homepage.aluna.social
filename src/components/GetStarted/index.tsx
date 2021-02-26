@@ -38,7 +38,7 @@ function GetStarted() {
           width="20rem"
           textStyle="callToAction"
         >
-          <Link href="https://aluna.social/signin">Create an account</Link>
+          <Link href="https://aluna.social/signup">Create an account</Link>
         </Button>
       </VStack>
     </Box>

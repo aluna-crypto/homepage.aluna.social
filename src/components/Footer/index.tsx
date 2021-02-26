@@ -26,7 +26,7 @@ function Footer() {
               Aluna.Social
             </Text>
           </HStack>
-          <Link href="https://aluna.social">
+          <Link href="https://aluna.social/insights">
             <a target="_blank">
               <Text
                 textStyle="cardText"
