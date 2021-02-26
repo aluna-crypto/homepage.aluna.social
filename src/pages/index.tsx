@@ -46,7 +46,7 @@ const Index = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   // make it full with for narrow version of the website
   const sidebarWidth = useBreakpointValue({ base: "full", sm: "xs" });
-  const hiddeMobile = useBreakpointValue({ base: true, sm: false });
+  // const hiddeMobile = useBreakpointValue({ base: true, sm: false });
   // const hiddeMobile = useBreakpointValue({ base: "full", sm: "xs" });
 
   return (
