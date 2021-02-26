@@ -14,15 +14,17 @@ import Profile from "../atoms/icons/Profile/Index";
 
 function PublicProfile() {
   const columns = useBreakpointValue({ base: 1, sm: 2, md: 2 });
-  const hiddeMobile = useBreakpointValue({ base: true, sm: false });
   return (
     <SimpleGrid
       columns={columns}
       // backgroundImage="url('profile.png')"
-      backgroundImage={`url('https://aluna-homepage.herokuapp.com/img/alunaut${
-        hiddeMobile ? "-mobile" : ""
-      }.png')`}
-      backgroundSize={hiddeMobile ? "contain" : "cover"}
+      backgroundColor="black"
+      backgroundImage={{
+        base:
+          "url('https://aluna-homepage.herokuapp.com/img/alunaut-mobile.png')",
+        sm: "url('https://aluna-homepage.herokuapp.com/img/alunaut.png')",
+      }}
+      backgroundSize={{ base: "contain", sm: "cover" }}
       backgroundRepeat="no-repeat"
       minHeight="566px"
       width="100%"
@@ -45,29 +47,22 @@ function PublicProfile() {
             trader profile.
           </span>
         </Text>
-        <Text
-          color="darkGray"
-          textStyle="cardText"
-          paddingTop="7"
-          width="22.5rem"
-        >
+        <Text color="darkGray" textStyle="cardText" paddingTop="7">
           Your Aluna Social profile is a Trust Pass! Share your profile with
           your friends to prove your trading reputation, while keeping sensitive
           information like position and portfolio size private.
         </Text>
         <Img
-          hidden={!hiddeMobile}
+          display={{ sm: "none" }}
           src="https://aluna-homepage.herokuapp.com/img/profiles.png"
-          maxW="22.5rem"
-          paddingTop="4"
+          paddingTop="10"
         />
         <Button
-          marginTop={hiddeMobile ? 2 : 7}
+          marginTop={{ base: 2, sm: 7 }}
           colorScheme="brand"
           color="white"
           marginRight="2"
-          height="3rem"
-          width="22.5rem"
+          width={{ base: "100%", sm: "80%" }}
           textStyle="callToAction"
         >
           <Link href="https://aluna.social/signup" passHref>
@@ -76,11 +71,12 @@ function PublicProfile() {
         </Button>
       </Box>
 
-      <Box paddingLeft="10" hidden={hiddeMobile}>
-        <Img
-          src="https://aluna-homepage.herokuapp.com/img/profiles.png"
-          maxW="22.5rem"
-        />
+      <Box
+        paddingLeft={{ base: 0, sm: "10" }}
+        paddingTop={{ base: "10" }}
+        display={{ base: "none", sm: "block" }}
+      >
+        <Img src="https://aluna-homepage.herokuapp.com/img/profiles.png" />
       </Box>
     </SimpleGrid>
   );

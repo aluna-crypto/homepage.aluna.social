@@ -1,12 +1,4 @@
-import {
-  Box,
-  HStack,
-  Icon,
-  SimpleGrid,
-  Text,
-  useBreakpointValue,
-  VStack,
-} from "@chakra-ui/react";
+import { Box, HStack, Icon, SimpleGrid, Text, VStack } from "@chakra-ui/react";
 import Link from "next/link";
 import React from "react";
 import Aluna from "../atoms/icons/Aluna/Index";
@@ -18,7 +10,6 @@ import Youtube from "../atoms/icons/Youtube/Index";
 import Subscribe from "./subscribe";
 
 function Footer() {
-  const hiddeMobile = useBreakpointValue({ base: true, sm: false });
   return (
     <Box
       // backgroundImage="url('footer.png')"
@@ -51,7 +42,7 @@ function Footer() {
             maxW="320px"
             alignItems="self-start"
             marginTop="50px !important"
-            hidden={!hiddeMobile}
+            display={{ sm: "none" }}
           >
             <Text textStyle="cardText" color="darkGray">
               GET UPDATES
@@ -96,7 +87,11 @@ function Footer() {
               © Aluna.Social 2020
             </Text>
           </VStack>
-          <VStack maxW="320px" hidden={hiddeMobile} alignItems="self-start">
+          <VStack
+            display={{ base: "none", sm: "block" }}
+            maxW="320px"
+            alignItems="self-start"
+          >
             <Text textStyle="cardText" color="darkGray">
               GET UPDATES
             </Text>

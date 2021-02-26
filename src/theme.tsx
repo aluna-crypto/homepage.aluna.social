@@ -34,8 +34,6 @@ const theme = extendTheme({
       lineHeight: "1.33",
     },
     cardText: {
-      fontFamily: "Roboto",
-      fontSize: "1rem",
       lineHeight: "1.38",
     },
     callToAction: {

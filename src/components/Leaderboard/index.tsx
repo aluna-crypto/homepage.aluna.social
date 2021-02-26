@@ -39,26 +39,20 @@ function LeaderBoard() {
         <Text
           textStyle="cardSubTitle"
           color="#f5be23"
-          marginTop={hiddeMobile ? "40px" : "150px"}
+          marginTop={{ base: "40px", sm: "150px" }}
         >
           Find the best traders
           <br />
           <span style={{ color: "white" }}>to follow and copy.</span>
         </Text>
-        <Text
-          textStyle="cardText"
-          color="darkGray"
-          marginTop="4"
-          width="22.5rem"
-        >
+        <Text textStyle="cardText" color="darkGray" marginTop="4">
           Traders’ performance is displayed on the Leaderboard for ultimate
           bragging rights. Find the best traders to follow and learn from, based
           on performance, risk, and consistency.
         </Text>
         <Img
-          hidden={!hiddeMobile}
+          display={{ sm: "none" }}
           src="https://aluna-homepage.herokuapp.com/img/leaderboard.png"
-          w="22.5rem"
           paddingTop="4"
         />
         <Button
@@ -67,7 +61,7 @@ function LeaderBoard() {
           color="white"
           marginRight="2"
           height="3rem"
-          width="22.5rem"
+          width={{ base: "100%", sm: "80%" }}
           textStyle="callToAction"
         >
           <Link href="https://aluna.social/leaderboard" passHref>
@@ -75,13 +69,16 @@ function LeaderBoard() {
           </Link>
         </Button>
       </Box>
-      <Box padding="10" hidden={hiddeMobile}>
+      <Box
+        paddingLeft={{ base: 0, sm: "10" }}
+        paddingTop={{ base: "10" }}
+        display={{ base: "none", sm: "block" }}
+      >
         <Text textStyle="cardText" color="darkGray">
           Rankings this month:
         </Text>
         <Img
           src="https://aluna-homepage.herokuapp.com/img/leaderboard.png"
-          w="360px"
           paddingTop="2"
         />
       </Box>

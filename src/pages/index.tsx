@@ -47,6 +47,7 @@ const Index = () => {
   // make it full with for narrow version of the website
   const sidebarWidth = useBreakpointValue({ base: "full", sm: "xs" });
   const hiddeMobile = useBreakpointValue({ base: true, sm: false });
+  // const hiddeMobile = useBreakpointValue({ base: "full", sm: "xs" });
 
   return (
     <>
@@ -61,36 +62,49 @@ const Index = () => {
         bgGradient="linear(to-b, rgba(20,20,20,0.8), rgba(20,20,20,0))"
       >
         <Flex justifyContent="space-between" alignItems="self-start">
-          <Center w="150px" marginLeft="4">
+          <Center marginLeft="4">
             <Link href="https://aluna.social">
               <a>
                 <HStack spacing="4">
                   <Aluna />
-                  <Box hidden={hiddeMobile}>
+                  <Box display={{ base: "none", sm: "block" }}>
                     <AlunaLogo />
                   </Box>
                 </HStack>
               </a>
             </Link>
           </Center>
-          <Center hidden={hiddeMobile} w="120px" paddingTop="1" marginLeft="10">
+          <Center
+            display={{ base: "none", sm: "block" }}
+            paddingTop="1"
+            marginLeft="10"
+          >
             <Link href="https://aluna.social/insights" passHref>
               <a>Trade on Aluna</a>
             </Link>
           </Center>
-          <Center hidden={hiddeMobile} w="120px" paddingTop="1">
+          <Center
+            display={{ base: "none", sm: "block" }}
+            paddingTop="1"
+            marginLeft="4"
+          >
             <Link href="https://aluna.social/token" passHref>
               <a>Aluna Token</a>
             </Link>
           </Center>
         </Flex>
         <Flex>
-          <Center w="120px" paddingTop="1">
+          <Center paddingTop="1">
             <Link href="https://aluna.social/signin" passHref>
               <a>Sign In</a>
             </Link>
           </Center>
-          <Center w="120px" paddingTop="1" marginRight="8" color="brandColor">
+          <Center
+            paddingTop="1"
+            marginLeft="4"
+            marginRight="8"
+            color="brandColor"
+          >
             <Link href="https://aluna.social/signup" passHref>
               <a>
                 <Text fontFamily="Roboto300" color="headerLinkColor">
@@ -246,6 +260,7 @@ const Index = () => {
         bgColor="transparent"
         backgroundImage="url('https://aluna-homepage.herokuapp.com/img/hero.jpg')"
         backgroundRepeat="no-repeat"
+        // alignItems="baseline"
       >
         <VStack spacing={6} marginX="2" maxWidth="900px">
           <Banner />

@@ -73,8 +73,7 @@ function TokenSale() {
           colorScheme="brand"
           color="white"
           marginRight="2"
-          height="3rem"
-          width="20rem"
+          width={{ base: "100%", sm: "80%" }}
           textStyle="callToAction"
         >
           <Link href="https://aluna.social/insights" passHref>
