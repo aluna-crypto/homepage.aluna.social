@@ -25,8 +25,9 @@ function InsightsCopy() {
       spacing="4"
     >
       <Box
+        backgroundColor="#1d1d1c"
         backgroundImage="url('img/insights.png')"
-        backgroundSize={"cover"}
+        backgroundSize="cover"
         backgroundPosition={{ base: "bottom" }}
         backgroundRepeat="no-repeat"
         padding="10"

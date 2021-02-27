@@ -72,7 +72,6 @@ function TokenSale() {
           marginTop="9"
           colorScheme="brand"
           color="white"
-          marginRight="2"
           width={{ base: "100%", sm: "40%", md: "90%" }}
           height="50px"
           textStyle="callToAction"
@@ -100,7 +99,7 @@ function TokenSale() {
         <Text fontSize="14px" color="darkGray" marginTop="140px">
           Aluna Partners and Investors
         </Text>
-        <HStack spacing="5" marginTop="4">
+        <HStack spacing={{ base: "2px", sm: "5" }} marginTop="4">
           <Link href="https://www.100x.group/" passHref>
             <a target="_blank" rel="nofollow noopener noreferrer">
               <P100x />
@@ -117,7 +116,7 @@ function TokenSale() {
             </a>
           </Link>
         </HStack>
-        <HStack spacing="5">
+        <HStack spacing={{ base: "2px", sm: "5" }}>
           <Link href="http://proofofwork.media/" passHref>
             <a target="_blank" rel="nofollow noopener noreferrer">
               <Ppow />

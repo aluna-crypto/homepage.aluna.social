@@ -29,10 +29,9 @@ function PublicProfile() {
       minHeight="566px"
       width="100%"
       align="left"
-      padding="10"
       borderRadius="2xl"
     >
-      <Box>
+      <Box padding="10">
         <HStack>
           <Icon as={Profile} />
           <Text textStyle="cardTitle" color="white" as="h2">
@@ -66,7 +65,6 @@ function PublicProfile() {
           marginTop={{ base: 2, sm: 7 }}
           colorScheme="brand"
           color="white"
-          marginRight="2"
           height="50px"
           width={{ base: "100%", sm: "80%" }}
           textStyle="callToAction"
@@ -78,6 +76,7 @@ function PublicProfile() {
       </Box>
 
       <Box
+        padding="10"
         paddingLeft={{ base: 0, sm: "10" }}
         paddingTop={{ base: "10" }}
         display={{ base: "none", sm: "block" }}

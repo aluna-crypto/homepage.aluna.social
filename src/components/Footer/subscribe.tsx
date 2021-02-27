@@ -79,7 +79,6 @@ function Subscribe() {
               colorScheme="brand"
               disabled={saving}
               color="white"
-              marginRight="2"
               width="100%"
               fontSize="0.8rem"
               margin="0"

@@ -262,7 +262,7 @@ const Index = () => {
         backgroundRepeat="no-repeat"
         // alignItems="baseline"
       >
-        <VStack spacing={6} marginX={{ base: "2" }} maxWidth="900px">
+        <VStack spacing={6} paddingX={{ base: "4" }} maxWidth="900px">
           <Banner />
           <MultiExchange />
           <PublicProfile />
