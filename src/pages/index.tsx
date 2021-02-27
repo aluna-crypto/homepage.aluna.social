@@ -53,14 +53,18 @@ const Index = () => {
         width="100%"
         position="fixed"
         top="0"
+        height="50px"
         // height="12"
-        padding="5"
+        // padding="5"
+        paddingTop="10px"
+        paddingLeft="20px"
+        paddingRight="10px"
         justifyContent="space-between"
         zIndex="sticky"
         bgGradient="linear(to-b, rgba(20,20,20,0.8), rgba(20,20,20,0))"
       >
         <Flex justifyContent="space-between" alignItems="self-start">
-          <Center marginLeft="4">
+          <Box>
             <Link href="https://aluna.social">
               <a>
                 <HStack spacing="4">
@@ -71,50 +75,49 @@ const Index = () => {
                 </HStack>
               </a>
             </Link>
-          </Center>
-          <Center
+          </Box>
+          <Box
             display={{ base: "none", sm: "block" }}
             paddingTop="1"
-            marginLeft="10"
+            marginLeft="35px"
           >
             <Link href="https://aluna.social/insights" passHref>
               <a>Trade on Aluna</a>
             </Link>
-          </Center>
-          <Center
+          </Box>
+          <Box
             display={{ base: "none", sm: "block" }}
             paddingTop="1"
-            marginLeft="4"
+            marginLeft="29px"
           >
             <Link href="https://aluna.social/token" passHref>
               <a>Aluna Token</a>
             </Link>
-          </Center>
+          </Box>
         </Flex>
         <Flex>
-          <Center paddingTop="1">
+          <Box paddingTop="1">
             <Link href="https://aluna.social/login" passHref>
               <a>Sign In</a>
             </Link>
-          </Center>
-          <Center
+          </Box>
+          <Box
             paddingTop="1"
-            marginLeft="4"
-            marginRight="8"
+            marginLeft="20px"
+            marginRight="15px"
             color="brandColor"
           >
             <Link href="https://aluna.social/signup" passHref>
               <a>
-                <Text fontFamily="Roboto300" color="headerLinkColor">
-                  Create Account
-                </Text>
+                <Text color="headerLinkColor">Create Account</Text>
               </a>
             </Link>
-          </Center>
-          <Button onClick={onOpen} colorScheme="burger">
+          </Box>
+          <Button padding="0" onClick={onOpen} colorScheme="burger">
             <Icon
               as={HamburgerIcon}
               color="white"
+              marginTop="-4px"
               backgroundColor="transparent"
               fontSize="2xl"
             />
@@ -134,7 +137,7 @@ const Index = () => {
           {/* <DrawerHeader>Create your account</DrawerHeader> */}
           <DrawerBody>
             <VStack alignItems="self-start" spacing="4">
-              <Box w="100%" marginTop="40">
+              <Box w="100%" marginTop="20">
                 <Text textStyle="cardText" marginBottom="2">
                   Further reading
                 </Text>

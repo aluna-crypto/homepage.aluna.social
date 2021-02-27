@@ -5,9 +5,14 @@ import React from "react";
 interface BannerInterface {}
 function Banner({}: BannerInterface) {
   return (
-    <Box w="100%" marginTop="48">
+    <Box w="100%" marginTop="190px">
       <VStack spacing={6} align="stretch" color="white" textAlign="center">
-        <Text fontSize="3.75rem" fontFamily="Roboto300" as="h1">
+        <Text
+          fontSize="3.75rem"
+          lineHeight="72px"
+          fontFamily="Roboto300"
+          as="h1"
+        >
           The social trading
           <br /> terminal we deserve.
         </Text>
@@ -19,8 +24,8 @@ function Banner({}: BannerInterface) {
             <Button
               colorScheme="brand"
               marginRight="2"
-              height="3rem"
-              width="10rem"
+              height="50px"
+              width="163px"
               textStyle="callToAction"
               color="white"
             >
@@ -31,8 +36,8 @@ function Banner({}: BannerInterface) {
             <Button
               colorScheme="dark"
               marginRight="2"
-              height="3rem"
-              width="10rem"
+              height="50px"
+              width="163px"
               textStyle="callToAction"
               color="white"
             >

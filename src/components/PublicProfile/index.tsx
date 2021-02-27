@@ -67,6 +67,7 @@ function PublicProfile() {
           colorScheme="brand"
           color="white"
           marginRight="2"
+          height="50px"
           width={{ base: "100%", sm: "80%" }}
           textStyle="callToAction"
         >

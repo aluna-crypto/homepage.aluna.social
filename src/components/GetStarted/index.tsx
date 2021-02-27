@@ -6,19 +6,26 @@ function GetStarted() {
   return (
     <Box
       // backgroundImage="url('calltoaction.png')"
-      minHeight="566px"
+      // minHeight="566px"
       width="100%"
       align="center"
-      padding="3"
+      marginTop="48"
     >
       <VStack>
-        <Text fontSize="5rem" color="white" fontFamily="Roboto300" as="h2">
+        <Text
+          fontSize="2.25rem"
+          lineHeight="48px"
+          color="white"
+          fontFamily="Roboto300"
+          as="h2"
+        >
           Get started.
         </Text>
         <Text
           fontSize="1.5rem"
           color="#f5be23"
           fontFamily="Roboto"
+          lineHeight="30px"
           marginTop="20"
           as="h3"
         >
@@ -34,9 +41,8 @@ function GetStarted() {
           marginTop="1.5rem !important"
           colorScheme="brand"
           color="white"
-          marginRight="2"
-          height="3rem"
-          width="20rem"
+          height="50px"
+          width="280px"
           textStyle="callToAction"
         >
           <Link href="https://aluna.social/signup">Create an account</Link>

@@ -13,16 +13,16 @@ function MultiExchange() {
       marginTop="6.5rem !important"
       backgroundColor="#1d1d1c"
       backgroundImage={{
-        base: "url('https://aluna-homepage.herokuapp.com/img/overview.jpg')",
-        sm:
+        base:
           "url('https://aluna-homepage.herokuapp.com/img/overview-mobile.jpg')",
+        sm: "url('https://aluna-homepage.herokuapp.com/img/overview.jpg')",
       }}
       // backgroundImage="url('multi.png')"
       backgroundSize="contain"
       backgroundPosition="right"
       // backgroundRepeat="repeat-y"
       backgroundRepeat="no-repeat"
-      minHeight="566px"
+      minHeight={{ base: "760px", sm: "566px" }}
       borderRadius="2xl"
       width="100%"
       align="left"

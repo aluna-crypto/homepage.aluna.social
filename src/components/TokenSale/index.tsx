@@ -20,7 +20,6 @@ import Pdexforce from "../atoms/icons/Pdexforce/Index";
 
 function TokenSale() {
   const columns = useBreakpointValue({ base: 1, md: 2 });
-  const widthBreakPoint = useBreakpointValue({ base: "50%", md: "100%" });
 
   return (
     <SimpleGrid
@@ -61,7 +60,7 @@ function TokenSale() {
         </Text>
         <Text
           color="darkGray"
-          width={widthBreakPoint}
+          width={{ base: "80%", sm: "40%", md: "100%" }}
           fontSize="14px"
           marginTop="5"
         >
@@ -74,7 +73,8 @@ function TokenSale() {
           colorScheme="brand"
           color="white"
           marginRight="2"
-          width={{ base: "100%", sm: "80%" }}
+          width={{ base: "100%", sm: "40%", md: "90%" }}
+          height="50px"
           textStyle="callToAction"
         >
           <Link href="https://aluna.social/insights" passHref>

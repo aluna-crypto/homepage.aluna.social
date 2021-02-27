@@ -100,22 +100,30 @@ function OpinionsReviews() {
         </VStack>
 
         <VStack
-          // backgroundColor="#242424"
+          backgroundColor="#242424"
+          paddingBottom="4"
           textAlign="left"
           alignItems="start"
+          borderRadius="base"
         >
-          <Img src="https://aluna-homepage.herokuapp.com/img/opinions-review.jpg" />
+          <Img
+            borderTopRadius="base"
+            src="https://aluna-homepage.herokuapp.com/img/opinions-review.jpg"
+          />
           <Text color="darkGray" padding="6" textStyle="cardText">
             Aluna.Social Review 2021: A Social Copy Trading Platform for Crypto
             Traders
           </Text>
-          <Img
-            src="https://aluna-homepage.herokuapp.com/img/coin-cap.png"
-            paddingLeft="6"
-            w="111px"
-          />
-          <Link href="https://coincap.io/" passHref>
+          <Link
+            href="https://blog.coincodecap.com/aluna-social-review"
+            passHref
+          >
             <a target="_blank" rel="nofollow noopener noreferrer">
+              <Img
+                src="https://aluna-homepage.herokuapp.com/img/coin-cap.png"
+                paddingLeft="6"
+                w="111px"
+              />
               <Text color="darkGray" paddingLeft="6">
                 blog.coindecap.com
               </Text>

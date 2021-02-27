@@ -1,5 +1,6 @@
 import {
   Box,
+  Center,
   HStack,
   Icon,
   Img,
@@ -26,11 +27,12 @@ function InsightsCopy() {
       <Box
         backgroundImage="url('img/insights.png')"
         backgroundSize={"cover"}
-        backgroundPosition={{ base: "center", sm: "" }}
+        backgroundPosition={{ base: "bottom" }}
         backgroundRepeat="no-repeat"
         padding="10"
         borderRadius="2xl"
-        minH="566px"
+        // minH={{ base: "70px", sm: "566px" }}
+        minH={{ base: "760px", sm: "860px", md: "556px" }}
       >
         <HStack>
           <Icon as={Insights} />
@@ -52,14 +54,14 @@ function InsightsCopy() {
           </Text>
         </HStack>
 
-        <Box w="100%" paddingTop="70px" paddingLeft="70px">
+        <Center w="100%" paddingTop="70px">
           <Img
             alignSelf="center"
             alt="Copy Trading"
             src="https://aluna-homepage.herokuapp.com/img/copy-counter-copy.png"
             w="222px"
           />
-        </Box>
+        </Center>
 
         <Text textStyle="cardSubTitle" color="#f5be23" marginTop="10">
           New to trading?

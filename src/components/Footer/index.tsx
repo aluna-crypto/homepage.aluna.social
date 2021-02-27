@@ -16,6 +16,7 @@ function Footer() {
       minHeight="408px"
       width="100%"
       align="center"
+      marginTop="48"
       borderTop="1px solid #2b2b2b"
     >
       <Box minHeight="408px" maxW="900px" align="left" padding="10">
