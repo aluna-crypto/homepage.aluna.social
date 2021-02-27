@@ -25,6 +25,7 @@ function PublicProfile() {
         sm: "url('https://aluna-homepage.herokuapp.com/img/alunaut.png')",
       }}
       backgroundSize={{ base: "contain", sm: "cover" }}
+      backgroundPosition={{ base: "0 20px" }}
       backgroundRepeat="no-repeat"
       minHeight="566px"
       width="100%"
