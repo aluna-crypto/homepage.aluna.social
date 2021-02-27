@@ -15,7 +15,6 @@ import {
   useBreakpointValue,
   Icon,
   HStack,
-  Center,
   // Spacer,
   Box,
 } from "@chakra-ui/react";
