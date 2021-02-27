@@ -9,7 +9,7 @@ function GetStarted() {
       // minHeight="566px"
       width="100%"
       align="center"
-      marginTop="48"
+      marginTop="192px !important"
     >
       <VStack>
         <Text

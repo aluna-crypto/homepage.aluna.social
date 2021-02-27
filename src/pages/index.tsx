@@ -190,6 +190,7 @@ const Index = () => {
                     colorScheme="brand"
                     width="100%"
                     textStyle="callToAction"
+                    height="50px"
                     color="white"
                   >
                     Go to Aluna
@@ -262,7 +263,7 @@ const Index = () => {
         backgroundRepeat="no-repeat"
         // alignItems="baseline"
       >
-        <VStack spacing={6} marginX="2" maxWidth="900px">
+        <VStack spacing={6} marginX={{ base: "2" }} maxWidth="900px">
           <Banner />
           <MultiExchange />
           <PublicProfile />
