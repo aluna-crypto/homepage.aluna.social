@@ -10,7 +10,7 @@ import Poloniex from "../atoms/icons/Poloniex";
 function MultiExchange() {
   return (
     <VStack
-      marginTop="6.5rem !important"
+      marginTop="100px !important"
       backgroundColor="#1d1d1c"
       backgroundImage={{
         base:
@@ -40,7 +40,7 @@ function MultiExchange() {
       <Text
         textStyle="cardSubTitle"
         color="#f5be23"
-        marginTop="1.625rem !important"
+        marginTop="26px !important"
         width={{ base: "90%", sm: "60%" }}
         as="h3"
       >

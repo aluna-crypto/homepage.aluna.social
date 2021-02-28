@@ -76,7 +76,7 @@ function TokenSale() {
           height="50px"
           textStyle="callToAction"
         >
-          <Link href="https://aluna.social/insights" passHref>
+          <Link href="https://aluna.social/token#tokenSales" passHref>
             Join the Sale
           </Link>
         </Button>

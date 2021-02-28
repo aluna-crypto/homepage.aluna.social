@@ -38,7 +38,7 @@ function GetStarted() {
           </span>
         </Text>
         <Button
-          marginTop="1.5rem !important"
+          marginTop="24px !important"
           colorScheme="brand"
           color="white"
           height="50px"

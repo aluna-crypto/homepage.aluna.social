@@ -68,7 +68,8 @@ function PublicProfile() {
           color="white"
           height="50px"
           width={{ base: "100%", sm: "80%" }}
-          textStyle="callToAction"
+          fontFamily="Roboto"
+          // textStyle="callToAction"
         >
           <Link href="https://aluna.social/signup" passHref>
             Create your own Aluna profile
