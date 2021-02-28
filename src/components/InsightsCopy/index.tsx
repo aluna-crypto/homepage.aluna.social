@@ -26,7 +26,7 @@ function InsightsCopy() {
     >
       <Box
         backgroundColor="#1d1d1c"
-        backgroundImage="url('img/insights.png')"
+        backgroundImage="url('https://aluna-homepage.herokuapp.com/img/insights.png')"
         backgroundSize="cover"
         backgroundPosition={{ base: "bottom" }}
         backgroundRepeat="no-repeat"
