@@ -1,5 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import client from "@sendgrid/client";
+import NextCors from "nextjs-cors";
 
 let SENDGRID_API_KEY: string;
 if (process.env.SENDGRID_API_KEY) {
@@ -10,8 +11,16 @@ if (process.env.SENDGRID_API_KEY) {
 
 client.setApiKey(SENDGRID_API_KEY);
 
-export default (req: NextApiRequest, res: NextApiResponse) => {
-  if (req.method !== "POST") return;
+export default async (req: NextApiRequest, res: NextApiResponse) => {
+  // Run the cors middleware
+  // nextjs-cors uses the cors package, so we invite you to check the documentation https://www.npmjs.com/package/cors
+  await NextCors(req, res, {
+    // Options
+    methods: ["POST"],
+    origin: "https://aluna.social",
+    optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
+  });
+
   const { email } = req.body;
   let listId = "f6cded04-911d-4c3a-9092-55287dbff085";
   if (process.env.NODE_ENV == "production") {
