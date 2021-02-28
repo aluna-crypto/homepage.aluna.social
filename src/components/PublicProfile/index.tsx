@@ -62,19 +62,20 @@ function PublicProfile() {
           src="https://aluna-homepage.herokuapp.com/img/profiles.png"
           paddingTop="10"
         />
-        <Button
-          marginTop={{ base: 2, sm: 7 }}
-          colorScheme="brand"
-          color="white"
-          height="50px"
-          width={{ base: "100%", sm: "80%" }}
-          fontFamily="Roboto"
-          // textStyle="callToAction"
-        >
-          <Link href="https://aluna.social/signup" passHref>
+        <Link href="https://aluna.social/signup" passHref>
+          <Button
+            marginTop={{ base: 2, sm: 7 }}
+            colorScheme="brand"
+            as="a"
+            color="white"
+            height="50px"
+            width={{ base: "100%", sm: "80%" }}
+            fontFamily="Roboto"
+            // textStyle="callToAction"
+          >
             Create your own Aluna profile
-          </Link>
-        </Button>
+          </Button>
+        </Link>
       </Box>
 
       <Box

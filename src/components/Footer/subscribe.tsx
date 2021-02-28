@@ -76,6 +76,7 @@ function Subscribe() {
           <InputRightAddon paddingLeft="0" overflow="hidden" paddingRight="0">
             <Button
               type="submit"
+              as="a"
               colorScheme="brand"
               disabled={saving}
               color="white"

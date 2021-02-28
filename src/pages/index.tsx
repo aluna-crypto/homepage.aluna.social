@@ -136,7 +136,7 @@ const Index = () => {
           {/* <DrawerHeader>Create your account</DrawerHeader> */}
           <DrawerBody>
             <VStack alignItems="self-start" spacing="4">
-              <Box w="100%" marginTop="20">
+              <Box w="100%" marginTop="10">
                 <Text textStyle="cardText" marginBottom="2">
                   Further reading
                 </Text>
@@ -183,9 +183,10 @@ const Index = () => {
               </Box>
               <Box w="100%" marginTop="60px !important">
                 <Text textStyle="cardText">Try the Aluna Platform</Text>
-                <Link href="https://aluna.social/insights">
+                <Link href="https://aluna.social/insights" passHref>
                   <Button
                     marginTop="2"
+                    as="a"
                     colorScheme="brand"
                     width="100%"
                     textStyle="callToAction"

@@ -68,18 +68,19 @@ function TokenSale() {
           monthly subscription fees, play prediction games, stake, farm, govern
           and much more (all coming soon).
         </Text>
-        <Button
-          marginTop="9"
-          colorScheme="brand"
-          color="white"
-          width={{ base: "100%", sm: "40%", md: "90%" }}
-          height="50px"
-          textStyle="callToAction"
-        >
-          <Link href="https://aluna.social/token#tokenSales" passHref>
+        <Link href="https://aluna.social/token#tokenSales" passHref>
+          <Button
+            marginTop="9"
+            as="a"
+            colorScheme="brand"
+            color="white"
+            width={{ base: "100%", sm: "40%", md: "90%" }}
+            height="50px"
+            textStyle="callToAction"
+          >
             Join the Sale
-          </Link>
-        </Button>
+          </Button>
+        </Link>
       </Box>
       <Box padding="10" backgroundColor="#1d1d1d" borderRadius="2xl">
         <HStack>

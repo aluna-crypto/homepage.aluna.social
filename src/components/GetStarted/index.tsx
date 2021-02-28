@@ -37,16 +37,19 @@ function GetStarted() {
             your first exchange.
           </span>
         </Text>
-        <Button
-          marginTop="24px !important"
-          colorScheme="brand"
-          color="white"
-          height="50px"
-          width="280px"
-          textStyle="callToAction"
-        >
-          <Link href="https://aluna.social/signup">Create an account</Link>
-        </Button>
+        <Link href="https://aluna.social/signup" passHref>
+          <Button
+            marginTop="24px !important"
+            as="a"
+            colorScheme="brand"
+            color="white"
+            height="50px"
+            width="280px"
+            textStyle="callToAction"
+          >
+            Create an account
+          </Button>
+        </Link>
       </VStack>
     </Box>
   );

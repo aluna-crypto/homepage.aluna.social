@@ -56,19 +56,20 @@ function LeaderBoard() {
           src="https://aluna-homepage.herokuapp.com/img/leaderboard.png"
           paddingTop="4"
         />
-        <Button
-          marginTop={{ base: 2, sm: 7 }}
-          colorScheme="brand"
-          color="white"
-          marginRight="2"
-          height="50px"
-          width={{ base: "100%", sm: "80%" }}
-          textStyle="callToAction"
-        >
-          <Link href="https://aluna.social/leaderboard" passHref>
+        <Link href="https://aluna.social/leaderboard" passHref>
+          <Button
+            marginTop={{ base: 2, sm: 7 }}
+            as="a"
+            colorScheme="brand"
+            color="white"
+            marginRight="2"
+            height="50px"
+            width={{ base: "100%", sm: "80%" }}
+            textStyle="callToAction"
+          >
             See the Leaderboard
-          </Link>
-        </Button>
+          </Button>
+        </Link>
       </Box>
       <Box
         paddingLeft={{ base: 0, sm: "10" }}

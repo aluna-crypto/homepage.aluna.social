@@ -21,30 +21,32 @@ function Banner({}: BannerInterface) {
         </Text>
         <VStack spacing={1} align="stretch" paddingTop="10">
           <Center>
-            <Button
-              colorScheme="brand"
-              marginRight="2"
-              height="50px"
-              width="163px"
-              textStyle="callToAction"
-              color="white"
-            >
-              <Link href="https://aluna.social/signup" passHref>
+            <Link href="https://aluna.social/signup" passHref>
+              <Button
+                colorScheme="brand"
+                as="a"
+                marginRight="2"
+                height="50px"
+                width="163px"
+                textStyle="callToAction"
+                color="white"
+              >
                 Sign Up
-              </Link>
-            </Button>
-            <Button
-              colorScheme="dark"
-              marginRight="2"
-              height="50px"
-              width="163px"
-              textStyle="callToAction"
-              color="white"
-            >
-              <Link href="https://aluna.social/insights" passHref>
+              </Button>
+            </Link>
+            <Link href="https://aluna.social/insights" passHref>
+              <Button
+                colorScheme="dark"
+                as="a"
+                marginRight="2"
+                height="50px"
+                width="163px"
+                textStyle="callToAction"
+                color="white"
+              >
                 See the platform
-              </Link>
-            </Button>
+              </Button>
+            </Link>
           </Center>
           <Center>
             <Text fontSize="1xl" color="darkGray" marginTop="2">
