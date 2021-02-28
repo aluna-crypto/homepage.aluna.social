@@ -20,7 +20,7 @@ function MultiExchange() {
       // backgroundImage="url('multi.png')"
       backgroundSize="contain"
       // backgroundPosition="right"
-      backgroundPosition={{ base: "center", sm: "right" }}
+      backgroundPosition={{ base: "0 60%", sm: "right" }}
       backgroundRepeat="no-repeat"
       minHeight={{ base: "760px", sm: "566px" }}
       borderRadius="2xl"
