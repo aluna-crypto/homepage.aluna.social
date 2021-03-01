@@ -44,7 +44,11 @@ function OpinionsReviews() {
                 alignSelf="start"
               >
                 <Box width="10">
-                  <Img src="https://aluna.social/img/spencer.jpeg" w="10" />
+                  <Img
+                    src="https://aluna.social/img/spencer.jpeg"
+                    alt="Spencer Yang"
+                    w="10"
+                  />
                 </Box>
                 <VStack align="stretch">
                   <Text color="white" textStyle="cardText">
@@ -80,7 +84,10 @@ function OpinionsReviews() {
                 align="start"
               >
                 <Box width="10">
-                  <Img src="https://res.cloudinary.com/hha9zkbyo/image/upload/c_fill,fl_progressive,h_140,w_140/mrbb3cxgkjru4xr7fyt0" />
+                  <Img
+                    alt="Magnus"
+                    src="https://res.cloudinary.com/hha9zkbyo/image/upload/c_fill,fl_progressive,h_140,w_140/mrbb3cxgkjru4xr7fyt0"
+                  />
                 </Box>
                 <VStack align="stretch">
                   <Text color="white" textStyle="cardText">
@@ -108,6 +115,7 @@ function OpinionsReviews() {
         >
           <Img
             borderTopRadius="base"
+            alt="A Social Copy Trading Platform for Crypto Traders"
             src="https://aluna-homepage.herokuapp.com/img/opinions-review.jpg"
           />
           <Text color="darkGray" padding="6" textStyle="cardText">
@@ -122,6 +130,7 @@ function OpinionsReviews() {
               <Img
                 src="https://aluna-homepage.herokuapp.com/img/coin-cap.png"
                 paddingLeft="6"
+                alt="blog.coindecap.com"
                 w="111px"
               />
               <Text color="darkGray" paddingLeft="6">

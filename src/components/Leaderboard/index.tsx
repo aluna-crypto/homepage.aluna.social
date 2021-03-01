@@ -54,6 +54,7 @@ function LeaderBoard() {
         <Img
           display={{ sm: "none" }}
           src="https://aluna-homepage.herokuapp.com/img/leaderboard.png"
+          alt="Find the best traders to follow and copy"
           paddingTop="4"
         />
         <Link href="https://aluna.social/leaderboard" passHref>

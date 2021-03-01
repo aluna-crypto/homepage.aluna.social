@@ -4,7 +4,7 @@ import { GTM_ID } from "../lib/gtm";
 export default class Document extends NextDocument {
   render() {
     return (
-      <Html>
+      <Html lang="en">
         <Head>
           <meta
             name="description"

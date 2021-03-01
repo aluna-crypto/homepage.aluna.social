@@ -42,6 +42,7 @@ function TokenSale() {
         <HStack>
           <Img
             w="40px"
+            alt="Public Token Sale"
             src="https://aluna-homepage.herokuapp.com/img/aluna-bright.png"
           />
           <Text textStyle="cardTitle" color="white" as="h2">

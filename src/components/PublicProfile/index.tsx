@@ -59,6 +59,7 @@ function PublicProfile() {
         </Text>
         <Img
           display={{ sm: "none" }}
+          alt="Build the ultimate trader profile."
           src="https://aluna-homepage.herokuapp.com/img/profiles.png"
           paddingTop="10"
         />
