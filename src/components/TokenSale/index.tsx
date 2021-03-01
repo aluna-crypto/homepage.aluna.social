@@ -93,7 +93,7 @@ function TokenSale() {
         <Text textStyle="cardSubTitle" color="#f5be23" marginTop="6" as="h3">
           Trusted partners
           <br />
-          <span style={{ color: "white" }}>to rely on the future.</span>
+          <span style={{ color: "white" }}>working with us</span>
         </Text>
         <Text textStyle="cardTitle" color="white" marginTop="5">
           See Investment opportunities.
