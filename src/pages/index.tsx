@@ -140,7 +140,7 @@ const Index = () => {
                 <Text textStyle="cardText" marginBottom="2">
                   Further reading
                 </Text>
-                <Link href="https://aluna.social/platform-overview">
+                <Link href="https://aluna.social/">
                   <a>
                     <HStack
                       textStyle="callToAction"
@@ -148,7 +148,7 @@ const Index = () => {
                       spacing="3"
                     >
                       <Aluna />
-                      <span>Aluna Platform Overview</span>
+                      <span>What is Aluna?</span>
                     </HStack>
                   </a>
                 </Link>
@@ -176,7 +176,7 @@ const Index = () => {
                       spacing="3"
                     >
                       <Medium />
-                      <span>Medium Articles</span>
+                      <span>Aluna on Medium</span>
                     </HStack>
                   </a>
                 </Link>
