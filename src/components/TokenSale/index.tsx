@@ -6,7 +6,6 @@ import {
   Img,
   SimpleGrid,
   Text,
-  useBreakpointValue,
 } from "@chakra-ui/react";
 import React from "react";
 import P100x from "../atoms/icons/P100x/Index";
@@ -19,12 +18,10 @@ import Pdaomaker from "../atoms/icons/Pdaomaker/Index";
 import Pdexforce from "../atoms/icons/Pdexforce/Index";
 
 function TokenSale() {
-  const columns = useBreakpointValue({ base: 1, md: 2 });
-
   return (
     <SimpleGrid
       // backgroundImage="url('tokensale.png')"
-      columns={columns}
+      columns={[1, 2]}
       minHeight="566px"
       width="100%"
       align="left"

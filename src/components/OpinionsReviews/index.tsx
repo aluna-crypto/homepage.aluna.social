@@ -1,16 +1,8 @@
-import {
-  Box,
-  Img,
-  SimpleGrid,
-  Text,
-  useBreakpointValue,
-  VStack,
-} from "@chakra-ui/react";
+import { Box, Img, SimpleGrid, Text, VStack } from "@chakra-ui/react";
 import Link from "next/link";
 import React from "react";
 
 function OpinionsReviews() {
-  const columns = useBreakpointValue({ base: 1, sm: 2, md: 3 });
   return (
     <Box
       // backgroundImage="url('reviews.png')"
@@ -25,7 +17,12 @@ function OpinionsReviews() {
       <Text textStyle="cardSubTitle" color="white" as="h2">
         Opinions & Reviews
       </Text>
-      <SimpleGrid columns={columns} spacingX="9" spacingY="9" marginTop="70px">
+      <SimpleGrid
+        columns={[1, 2, 3]}
+        spacingX="9"
+        spacingY="9"
+        marginTop="70px"
+      >
         <VStack spacing="5" alignItems="flex-start">
           <Text color="darkGray" textStyle="testimonials">
             “I really like the ability to view trades across various exchanges

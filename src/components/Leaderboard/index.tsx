@@ -6,17 +6,15 @@ import {
   Img,
   SimpleGrid,
   Text,
-  useBreakpointValue,
 } from "@chakra-ui/react";
 import Link from "next/link";
 import React from "react";
 import LeaderBoardIcon from "../atoms/icons/Leaderboard/Index";
 
 function LeaderBoard() {
-  const columns = useBreakpointValue({ base: 1, sm: 2, md: 2 });
   return (
     <SimpleGrid
-      columns={columns}
+      columns={[1, 2]}
       // backgroundImage="url('leaderboard.png')"
       backgroundColor="black"
       backgroundImage="url('https://aluna-homepage.herokuapp.com/img/moon.jpg')"

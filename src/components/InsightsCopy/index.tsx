@@ -6,19 +6,16 @@ import {
   Img,
   SimpleGrid,
   Text,
-  useBreakpointValue,
 } from "@chakra-ui/react";
 import React from "react";
 import CopyTrading from "../atoms/icons/CopyTrading/Index";
 import Insights from "../atoms/icons/Insights/Index";
 
 function InsightsCopy() {
-  const columns = useBreakpointValue({ base: 1, md: 2 });
-
   return (
     <SimpleGrid
       // backgroundImage="url('insightscopy.png')"
-      columns={columns}
+      columns={[1, 2]}
       minHeight="566px"
       width="100%"
       align="left"
