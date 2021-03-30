@@ -4,6 +4,10 @@ import React from "react";
 
 interface BannerInterface {}
 function Banner({}: BannerInterface) {
+  let isUserLoggedIn;
+  if (typeof window !== "undefined") {
+    isUserLoggedIn = !!localStorage.getItem("Meteor.userId");
+  }
   return (
     <Box w="100%" marginTop="190px">
       <VStack spacing={6} align="stretch" color="white" textAlign="center">
@@ -21,7 +25,12 @@ function Banner({}: BannerInterface) {
         </Text>
         <VStack spacing={1} align="stretch" paddingTop="10">
           <Center>
-            <Link href="https://aluna.social/signup" passHref>
+            <Link
+              href={`https://aluna.social/${
+                isUserLoggedIn ? `insights` : `signup`
+              }`}
+              passHref
+            >
               <Button
                 colorScheme="brand"
                 as="a"
@@ -31,7 +40,7 @@ function Banner({}: BannerInterface) {
                 textStyle="callToAction"
                 color="white"
               >
-                Sign Up
+                {isUserLoggedIn ? `My account` : `Sign Up`}
               </Button>
             </Link>
             <Link href="https://aluna.social/insights" passHref>

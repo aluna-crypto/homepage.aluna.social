@@ -45,6 +45,10 @@ const Index = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   // make it full with for narrow version of the website
   const sidebarWidth = useBreakpointValue({ base: "full", sm: "xs" });
+  let isUserLoggedIn;
+  if (typeof window !== "undefined") {
+    isUserLoggedIn = !!localStorage.getItem("Meteor.userId");
+  }
 
   return (
     <>
@@ -95,23 +99,38 @@ const Index = () => {
           </Box>
         </Flex>
         <Flex>
-          <Box paddingTop="1">
-            <Link href="https://aluna.social/login" passHref>
-              <a>Sign In</a>
+          {isUserLoggedIn ? (
+            <Link href="https://aluna.social/insights" passHref>
+              <Button
+                marginRight="15px"
+                as="a"
+                borderRadius="1"
+                colorScheme="brand"
+              >
+                My account
+              </Button>
             </Link>
-          </Box>
-          <Box
-            paddingTop="1"
-            marginLeft="20px"
-            marginRight="15px"
-            color="brandColor"
-          >
-            <Link href="https://aluna.social/signup" passHref>
-              <a>
-                <Text color="headerLinkColor">Create Account</Text>
-              </a>
-            </Link>
-          </Box>
+          ) : (
+            <>
+              <Box paddingTop="1">
+                <Link href="https://aluna.social/login" passHref>
+                  <a>Sign In</a>
+                </Link>
+              </Box>
+              <Box
+                paddingTop="1"
+                marginLeft="20px"
+                marginRight="15px"
+                color="brandColor"
+              >
+                <Link href="https://aluna.social/signup" passHref>
+                  <a>
+                    <Text color="headerLinkColor">Create Account</Text>
+                  </a>
+                </Link>
+              </Box>
+            </>
+          )}
           <Button padding="0" onClick={onOpen} colorScheme="burger">
             <Icon
               as={HamburgerIcon}
