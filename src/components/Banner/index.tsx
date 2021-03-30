@@ -4,7 +4,7 @@ import React from "react";
 
 interface BannerInterface {}
 function Banner({}: BannerInterface) {
-  let isUserLoggedIn;
+  let isUserLoggedIn = false;
   if (typeof window !== "undefined") {
     isUserLoggedIn = !!localStorage.getItem("Meteor.userId");
   }

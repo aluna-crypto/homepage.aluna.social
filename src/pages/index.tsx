@@ -45,9 +45,17 @@ const Index = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   // make it full with for narrow version of the website
   const sidebarWidth = useBreakpointValue({ base: "full", sm: "xs" });
-  let isUserLoggedIn;
+  let isUserLoggedIn = false;
   if (typeof window !== "undefined") {
     isUserLoggedIn = !!localStorage.getItem("Meteor.userId");
+    let url = window.location.href;
+
+    // if (url === "https//aluna.social/" && isUserLoggedIn) {
+    // console.log("url is ", url);
+    if (url === "http://localhost:3002/" && isUserLoggedIn) {
+      // console.log("enter location replace");
+      // window.location.replace("/insights");
+    }
   }
 
   return (
