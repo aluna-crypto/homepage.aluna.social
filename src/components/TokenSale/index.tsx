@@ -41,22 +41,23 @@ function TokenSale() {
       >
         <HStack>
           <Img
-            w="40px"
+            w="24px"
             alt="Public Token Sale"
             src="https://aluna-homepage.herokuapp.com/img/aluna-bright.png"
           />
           <Text textStyle="cardTitle" color="white" as="h2">
-            Public Token Sale
+            ALN
           </Text>
         </HStack>
-        <Text textStyle="cardTitle" color="#f34a34" marginTop="110px">
-          Starts: March 1st, 2021
-        </Text>
-        <Text textStyle="cardSubTitle" color="#f5be23" marginTop="5" as="h3">
-          Join the ALN{" "}
+        <Text
+          textStyle="cardSubTitle"
+          color="#f5be23"
+          marginTop="115px"
+          as="h3"
+        >
+          Find the best traders{" "}
           <span style={{ color: "white" }}>
-            <br />
-            Public Token Sale
+            <br /> to follow and copy.
           </span>
         </Text>
         <Text
@@ -65,11 +66,11 @@ function TokenSale() {
           fontSize="14px"
           marginTop="5"
         >
-          Use the Aluna Social Token (ALN) to earn incentives, spend against
-          monthly subscription fees, play prediction games, stake, farm, govern
-          and much more (all coming soon).
+          Traders’ performance is displayed on the Leaderboard for ultimate
+          bragging rights. Find the best traders to follow and learn from, based
+          on performance, risk, and consistency.
         </Text>
-        <Link href="https://aluna.social/token#tokenSales" passHref>
+        <Link href="https://aluna.social/insights" passHref>
           <Button
             marginTop="9"
             as="a"
@@ -79,7 +80,7 @@ function TokenSale() {
             height="50px"
             textStyle="callToAction"
           >
-            Join the Sale
+            Learn more about ALN
           </Button>
         </Link>
       </Box>
