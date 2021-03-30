@@ -55,7 +55,7 @@ function LeaderBoard() {
           alt="Find the best traders to follow and copy"
           paddingTop="4"
         />
-        <Link href="https://aluna.social/leaderboard" passHref>
+        <Link href="/leaderboard" passHref>
           <Button
             marginTop={{ base: 2, sm: 7 }}
             as="a"

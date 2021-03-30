@@ -37,7 +37,7 @@ function GetStarted() {
             your first exchange.
           </span>
         </Text>
-        <Link href="https://aluna.social/signup" passHref>
+        <Link href="/signup" passHref>
           <Button
             marginTop="24px !important"
             as="a"

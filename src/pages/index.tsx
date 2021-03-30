@@ -68,7 +68,7 @@ const Index = () => {
       >
         <Flex justifyContent="space-between" alignItems="self-start">
           <Box>
-            <Link href="https://aluna.social">
+            <Link href="/">
               <a>
                 <HStack spacing="4">
                   <Aluna />
@@ -84,7 +84,7 @@ const Index = () => {
             paddingTop="1"
             marginLeft="35px"
           >
-            <Link href="https://aluna.social/insights" passHref>
+            <Link href="/insights" passHref>
               <a>Trade on Aluna</a>
             </Link>
           </Box>
@@ -93,14 +93,14 @@ const Index = () => {
             paddingTop="1"
             marginLeft="29px"
           >
-            <Link href="https://aluna.social/token" passHref>
+            <Link href="/token" passHref>
               <a>Aluna Token</a>
             </Link>
           </Box>
         </Flex>
         <Flex>
           {isUserLoggedIn ? (
-            <Link href="https://aluna.social/insights" passHref>
+            <Link href="/insights" passHref>
               <Button
                 marginRight="15px"
                 as="a"
@@ -113,7 +113,7 @@ const Index = () => {
           ) : (
             <>
               <Box paddingTop="1">
-                <Link href="https://aluna.social/login" passHref>
+                <Link href="/login" passHref>
                   <a>Sign In</a>
                 </Link>
               </Box>
@@ -123,7 +123,7 @@ const Index = () => {
                 marginRight="15px"
                 color="brandColor"
               >
-                <Link href="https://aluna.social/signup" passHref>
+                <Link href="/signup" passHref>
                   <a>
                     <Text color="headerLinkColor">Create Account</Text>
                   </a>
@@ -159,7 +159,7 @@ const Index = () => {
                 <Text textStyle="cardText" marginBottom="2">
                   Further reading
                 </Text>
-                <Link href="https://aluna.social/">
+                <Link href="/">
                   <a>
                     <HStack
                       textStyle="callToAction"
@@ -173,7 +173,7 @@ const Index = () => {
                 </Link>
               </Box>
               <Box w="100%">
-                <Link href="https://aluna.social/token">
+                <Link href="/token">
                   <a>
                     <HStack
                       textStyle="callToAction"
@@ -202,7 +202,7 @@ const Index = () => {
               </Box>
               <Box w="100%" marginTop="60px !important">
                 <Text textStyle="cardText">Try the Aluna Platform</Text>
-                <Link href="https://aluna.social/insights" passHref>
+                <Link href="/insights" passHref>
                   <Button
                     marginTop="2"
                     as="a"
@@ -250,21 +250,21 @@ const Index = () => {
           </DrawerBody>
           <DrawerFooter textAlign="left">
             <VStack alignItems="flex-start">
-              <Link href="https://aluna.social/contact" passHref>
+              <Link href="/contact" passHref>
                 <Text>Contact Us</Text>
               </Link>
               <HStack>
-                <Link href="https://aluna.social/privacy-policy" passHref>
+                <Link href="/privacy-policy" passHref>
                   <a>
                     <Text textStyle="testimonials">Privacy •</Text>
                   </a>
                 </Link>
-                <Link href="https://aluna.social/terms-and-conditions">
+                <Link href="/terms-and-conditions">
                   <a>
                     <Text textStyle="testimonials">Terms & Conditions •</Text>
                   </a>
                 </Link>
-                <Link href="https://aluna.social/about-us">
+                <Link href="/about-us">
                   <a>
                     <Text textStyle="testimonials">• About us</Text>
                   </a>

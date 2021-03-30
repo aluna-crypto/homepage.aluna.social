@@ -61,7 +61,7 @@ function PublicProfile() {
           src="https://aluna-homepage.herokuapp.com/img/profiles.png"
           paddingTop="10"
         />
-        <Link href="https://aluna.social/signup" passHref>
+        <Link href="/signup" passHref>
           <Button
             marginTop={{ base: 2, sm: 7 }}
             colorScheme="brand"

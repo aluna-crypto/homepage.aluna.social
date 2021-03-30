@@ -67,7 +67,7 @@ function TokenSale() {
           bragging rights. Find the best traders to follow and learn from, based
           on performance, risk, and consistency.
         </Text>
-        <Link href="https://aluna.social/insights" passHref>
+        <Link href="/insights" passHref>
           <Button
             marginTop="9"
             as="a"

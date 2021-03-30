@@ -25,12 +25,7 @@ function Banner({}: BannerInterface) {
         </Text>
         <VStack spacing={1} align="stretch" paddingTop="10">
           <Center>
-            <Link
-              href={`https://aluna.social/${
-                isUserLoggedIn ? `insights` : `signup`
-              }`}
-              passHref
-            >
+            <Link href={`/${isUserLoggedIn ? `insights` : `signup`}`} passHref>
               <Button
                 colorScheme="brand"
                 as="a"
@@ -43,7 +38,7 @@ function Banner({}: BannerInterface) {
                 {isUserLoggedIn ? `My account` : `Sign Up`}
               </Button>
             </Link>
-            <Link href="https://aluna.social/insights" passHref>
+            <Link href="/insights" passHref>
               <Button
                 colorScheme="dark"
                 as="a"
