@@ -54,7 +54,6 @@ function TokenSale() {
         >
           The community-run token{" "}
           <span style={{ color: "white" }}>
-            <br />
             powering Aluna Trading Terminal.
           </span>
         </Text>
