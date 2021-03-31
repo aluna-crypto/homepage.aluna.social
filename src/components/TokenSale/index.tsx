@@ -52,9 +52,10 @@ function TokenSale() {
           marginTop="115px"
           as="h3"
         >
-          Find the best traders{" "}
+          The community-run token{" "}
           <span style={{ color: "white" }}>
-            <br /> to follow and copy.
+            <br />
+            powering Aluna Trading Terminal.
           </span>
         </Text>
         <Text
@@ -63,9 +64,8 @@ function TokenSale() {
           fontSize="14px"
           marginTop="5"
         >
-          Traders’ performance is displayed on the Leaderboard for ultimate
-          bragging rights. Find the best traders to follow and learn from, based
-          on performance, risk, and consistency.
+          ALN empowers traders, builds trust in the community and rewards merit.
+          Buy ALN from a list of available vendors.
         </Text>
         <Link href="/insights" passHref>
           <Button
