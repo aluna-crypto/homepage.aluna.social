@@ -162,7 +162,7 @@ const Index = () => {
                 <Text textStyle="cardText" marginBottom="2">
                   Further reading
                 </Text>
-                <Link href="/">
+                <Link href="#">
                   <a>
                     <HStack
                       textStyle="callToAction"
