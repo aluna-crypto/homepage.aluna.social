@@ -162,18 +162,17 @@ const Index = () => {
                 <Text textStyle="cardText" marginBottom="2">
                   Further reading
                 </Text>
-                <Link href="#">
-                  <a>
-                    <HStack
-                      textStyle="callToAction"
-                      color="darkGray"
-                      spacing="3"
-                    >
-                      <Aluna />
-                      <span>What is Aluna?</span>
-                    </HStack>
-                  </a>
-                </Link>
+                <a>
+                  <HStack
+                    textStyle="callToAction"
+                    cursor="pointer"
+                    color="darkGray"
+                    spacing="3"
+                  >
+                    <Aluna />
+                    <span>What is Aluna?</span>
+                  </HStack>
+                </a>
               </Box>
               <Box w="100%">
                 <Link href="/token">
