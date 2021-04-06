@@ -85,7 +85,7 @@ function Footer() {
               </Link>
             </HStack>
             <Text fontSize="0.8rem" color="darkGray" paddingTop="40px">
-              © Aluna.Social 2020
+              © Aluna.Social 2021
             </Text>
           </VStack>
           <VStack

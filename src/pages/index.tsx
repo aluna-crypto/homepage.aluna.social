@@ -48,13 +48,8 @@ const Index = () => {
   let isUserLoggedIn = false;
   if (typeof window !== "undefined") {
     isUserLoggedIn = !!localStorage.getItem("Meteor.userId");
-    let url = window.location.href;
-
-    // if (url === "https//aluna.social/" && isUserLoggedIn) {
-    // console.log("url is ", url);
-    if (url === "http://localhost:3002/" && isUserLoggedIn) {
-      // console.log("enter location replace");
-      // window.location.replace("/insights");
+    if (isUserLoggedIn && !/home/.test(window.location.href)) {
+      window.location.replace("/insights");
     }
   }
 
@@ -112,8 +107,8 @@ const Index = () => {
               <Button
                 marginRight="15px"
                 as="a"
-                borderRadius="1"
                 colorScheme="brand"
+                textStyle="callToAction"
               >
                 My account
               </Button>

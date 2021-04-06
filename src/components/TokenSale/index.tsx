@@ -59,20 +59,20 @@ function TokenSale() {
         </Text>
         <Text
           color="darkGray"
-          width={{ base: "80%", sm: "40%", md: "100%" }}
+          width={{ base: "80%", md: "100%" }}
           fontSize="14px"
           marginTop="5"
         >
           ALN empowers traders, builds trust in the community and rewards merit.
           Buy ALN from a list of available vendors.
         </Text>
-        <Link href="/insights" passHref>
+        <Link href="/token" passHref>
           <Button
             marginTop="9"
             as="a"
             colorScheme="brand"
             color="white"
-            width={{ base: "100%", sm: "40%", md: "90%" }}
+            width="100%"
             height="50px"
             textStyle="callToAction"
           >
@@ -98,7 +98,7 @@ function TokenSale() {
         <Text fontSize="14px" color="darkGray" marginTop="140px">
           Aluna Partners and Investors
         </Text>
-        <HStack spacing={{ base: "2px", sm: "5" }} marginTop="4">
+        <HStack spacing={{ base: "5", sm: "5" }} marginTop="4">
           <Link href="https://www.100x.group/" passHref>
             <a target="_blank" rel="nofollow noopener noreferrer">
               <P100x />
@@ -115,7 +115,7 @@ function TokenSale() {
             </a>
           </Link>
         </HStack>
-        <HStack spacing={{ base: "2px", sm: "5" }}>
+        <HStack spacing={{ base: "5", sm: "5" }}>
           <Link href="http://proofofwork.media/" passHref>
             <a target="_blank" rel="nofollow noopener noreferrer">
               <Ppow />
