@@ -48,7 +48,7 @@ const Index = () => {
   let isUserLoggedIn = false;
   if (typeof window !== "undefined") {
     isUserLoggedIn = !!localStorage.getItem("Meteor.userId");
-    if (isUserLoggedIn && !/home/.test(window.location.href)) {
+    if (isUserLoggedIn && !/platform-overview/.test(window.location.href)) {
       window.location.replace("/insights");
     }
   }
