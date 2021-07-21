@@ -5,7 +5,9 @@ import Bitfinex from "../atoms/icons/Bitfinex";
 import Bitmex from "../atoms/icons/Bitmex";
 import Bittrex from "../atoms/icons/Bittrex";
 import ConnectedExchange from "../atoms/icons/chain/Index";
+import Gateio from "../atoms/icons/Gateio";
 import Poloniex from "../atoms/icons/Poloniex";
+import Valr from "../atoms/icons/Valr";
 
 function MultiExchange() {
   return (
@@ -68,6 +70,12 @@ function MultiExchange() {
         </Link>
         <Link href="https://poloniex.com/signup?c=2QK5CEF3" isExternal>
           <Poloniex />
+        </Link>
+        <Link href="https://www.valr.com/invite/VADG3H2H" isExternal>
+          <Valr />
+        </Link>
+        <Link href="https://www.gate.io/?ref=3384030" isExternal>
+          <Gateio />
         </Link>
       </HStack>
       <Text color="darkGray" textStyle="cardText">

@@ -2,7 +2,7 @@
   "name": "with-chakra-ui-typescript",
   "version": "1.0.0",
   "scripts": {
-    "dev": "next --port 3002",
+    "dev": "next --port 3004",
     "build": "next build",
     "start-dev": "next start",
     "start": "next start -p $PORT"
