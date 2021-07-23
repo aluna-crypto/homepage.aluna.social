@@ -1,11 +1,13 @@
-import { HStack, Icon, Spacer, Text, VStack } from "@chakra-ui/react";
+import { HStack, Icon, Spacer, Text, VStack, Link } from "@chakra-ui/react";
 import React from "react";
 import Binance from "../atoms/icons/Binance/index";
 import Bitfinex from "../atoms/icons/Bitfinex";
 import Bitmex from "../atoms/icons/Bitmex";
 import Bittrex from "../atoms/icons/Bittrex";
 import ConnectedExchange from "../atoms/icons/chain/Index";
+import Gateio from "../atoms/icons/Gateio";
 import Poloniex from "../atoms/icons/Poloniex";
+import Valr from "../atoms/icons/Valr";
 
 function MultiExchange() {
   return (
@@ -13,8 +15,7 @@ function MultiExchange() {
       marginTop="100px !important"
       backgroundColor="#1d1d1c"
       backgroundImage={{
-        base:
-          "url('https://aluna-homepage.herokuapp.com/img/overview-mobile.jpg')",
+        base: "url('https://aluna-homepage.herokuapp.com/img/overview-mobile.jpg')",
         sm: "url('https://aluna-homepage.herokuapp.com/img/overview.jpg')",
       }}
       // backgroundImage="url('multi.png')"
@@ -49,11 +50,33 @@ function MultiExchange() {
       </Text>
       <Spacer />
       <HStack spacing="1">
-        <Bitmex />
-        <Binance />
-        <Bitfinex />
-        <Bittrex />
-        <Poloniex />
+        <Link href="https://www.bitmex.com/register/jUcp71" isExternal>
+          <Bitmex />
+        </Link>
+        <Link
+          href="https://accounts.binance.com/en/register?ref=10957615"
+          isExternal
+        >
+          <Binance />
+        </Link>
+        <Link href="https://www.bitfinex.com/?refcode=OMF3ML7DXO" isExternal>
+          <Bitfinex />
+        </Link>
+        <Link
+          href="https://bittrex.com/Account/Register?referralCode=HU1-4J1-PCM"
+          isExternal
+        >
+          <Bittrex />
+        </Link>
+        <Link href="https://poloniex.com/signup?c=2QK5CEF3" isExternal>
+          <Poloniex />
+        </Link>
+        <Link href="https://www.valr.com/invite/VADG3H2H" isExternal>
+          <Valr />
+        </Link>
+        <Link href="https://www.gate.io/?ref=3384030" isExternal>
+          <Gateio />
+        </Link>
       </HStack>
       <Text color="darkGray" textStyle="cardText">
         View your portfolio distribution, execute
