@@ -16,6 +16,7 @@ import {
   Icon,
   HStack,
   // Spacer,
+  Img,
   Box,
 } from "@chakra-ui/react";
 import React from "react";
@@ -153,7 +154,7 @@ const Index = () => {
         size={sidebarWidth}
       >
         <DrawerOverlay />
-        <DrawerContent backgroundColor="#1d1d1c" color="darkGray">
+        <DrawerContent maxW="22rem" backgroundColor="#1d1d1c" color="darkGray">
           <DrawerCloseButton />
           {/* <DrawerHeader>Create your account</DrawerHeader> */}
           <DrawerBody>
@@ -250,7 +251,7 @@ const Index = () => {
               </Box>
             </VStack>
           </DrawerBody>
-          <DrawerFooter textAlign="left">
+          <DrawerFooter textAlign="left" justifyContent="start">
             <VStack alignItems="flex-start">
               <Link href="/contact" passHref>
                 <Text>Contact Us</Text>
@@ -258,17 +259,47 @@ const Index = () => {
               <HStack>
                 <Link href="/privacy-policy" passHref>
                   <a>
-                    <Text textStyle="testimonials">Privacy •</Text>
+                    <Text textStyle="testimonials">Privacy</Text>
                   </a>
                 </Link>
                 <Link href="/terms-and-conditions">
                   <a>
-                    <Text textStyle="testimonials">Terms & Conditions •</Text>
+                    <Text textStyle="testimonials">• Terms & Conditions</Text>
                   </a>
                 </Link>
                 <Link href="/about-us">
                   <a>
                     <Text textStyle="testimonials">• About us</Text>
+                  </a>
+                </Link>
+              </HStack>
+
+              <HStack>
+                <Text textStyle="testimonials">Powered by </Text>
+                <Link href="https://www.coingecko.com/" passHref>
+                  <a target="_blank" rel="nofollow noopener noreferrer">
+                    <Text textStyle="testimonials">
+                      <Img
+                        display="inline"
+                        alt="CoinGecko"
+                        src="/img/coingecko.svg"
+                      />
+                      {"  "}
+                      CoinGecko
+                    </Text>
+                  </a>
+                </Link>
+                <Link href="https://www.tradingview.com/">
+                  <a target="_blank" rel="nofollow noopener noreferrer">
+                    <Text textStyle="testimonials">
+                      <Img
+                        display="inline"
+                        alt="TradingView"
+                        src="/img/tradingview.svg"
+                      />
+                      {"  "}
+                      TradingVIew
+                    </Text>
                   </a>
                 </Link>
               </HStack>
