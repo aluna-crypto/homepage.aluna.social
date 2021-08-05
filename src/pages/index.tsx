@@ -282,7 +282,7 @@ const Index = () => {
                       <Img
                         display="inline"
                         alt="CoinGecko"
-                        src="/img/coingecko.svg"
+                        src="/img/_coingecko.svg"
                       />
                       {"  "}
                       CoinGecko
